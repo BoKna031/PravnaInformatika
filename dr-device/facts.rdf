@@ -6,9 +6,9 @@
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
         <lc:name>case 01</lc:name>
         <lc:defendant>John</lc:defendant>
-        <lc:speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</lc:speed>
-	<lc:allowed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lc:allowed_speed>
-	<lc:driving_on>town_road</lc:driving_on>
-	<lc:caused_accident>no</lc:caused_accident>
+        <lc:goods>pork</lc:goods>
+	<lc:possession_of_cleared_customs_goods>yes</lc:possession_of_cleared_customs_goods>
+	<lc:location>border</lc:location>
+	<lc:transfer_of_weapon_or_ammunition>no</lc:transfer_of_weapon_or_ammunition>
     </lc:case>
 </rdf:RDF>

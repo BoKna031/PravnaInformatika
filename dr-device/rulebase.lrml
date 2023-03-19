@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
 	<lrml:Statements>
-		<lrml:PrescriptiveStatement key="ps1">
+	<!--Opis stavki-->
+		<lrml:PrescriptiveStatement key="ps_smuggling_lvl_1">
 			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasGoods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasVirus">Speed</ruleml:Var>
+							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
+							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>70</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
+							<ruleml:Rel iri="lc:location"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">border</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
+							<ruleml:Rel iri="lc:transfer_of_weapon_or_ammunition"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
 						</ruleml:Atom>
@@ -36,40 +30,33 @@
 				</ruleml:if>
 				<ruleml:then>
 					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
+						<ruleml:Rel>is_smuggling_lvl_1</ruleml:Rel>
 						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps2">
+		<lrml:PrescriptiveStatement key="ps_smuggling_lvl_0">
 			<ruleml:Rule key=":rule2" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasGoods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
+							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
+							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&lt;=</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>50</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
+							<ruleml:Rel iri="lc:location"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
+							<ruleml:Data xsi:type="xs:string">border</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
+							<ruleml:Rel iri="lc:transfer_of_weapon_or_ammunition"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
 						</ruleml:Atom>
@@ -78,183 +65,34 @@
 				<ruleml:then>
 					<ruleml:Negation>
 						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
+							<ruleml:Rel>is_smuggling_lvl_1</ruleml:Rel>
 							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 						</ruleml:Atom>
 					</ruleml:Negation>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps3">
+		<lrml:PrescriptiveStatement key="ps_smuggling_lvl_2">
 			<ruleml:Rule key=":rule3" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasGoods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
+							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>80</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
+							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
 						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps4">
-			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps5">
-			<ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:location"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">border</ruleml:Data>
 						</ruleml:Atom>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>100</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps6">
-			<ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps7">
-			<ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps8">
-			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>100</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
+							<ruleml:Rel iri="lc:transfer_of_weapon_or_ammunition"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
 							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
 						</ruleml:Atom>
@@ -262,189 +100,124 @@
 				</ruleml:if>
 				<ruleml:then>
 					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv3_with_accident</ruleml:Rel>
+						<ruleml:Rel>is_smuggling_lvl_2</ruleml:Rel>
 						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
 					</ruleml:Atom>
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_1">
+			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_smuggling_lvl_2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_smuggling_lvl_1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+	
+	<!--Opis kazni-->
+		<lrml:PenaltyStatement key="jail_min_1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Month</ruleml:Var>
+							<ruleml:Ind>6</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>5</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_min_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>8</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
 		
-		<lrml:PenaltyStatement key="pen1">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>10000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen2">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>10000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen3">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>20000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen4">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>20000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen5">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>40000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen6">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":max_imprisonment"/>
-							<ruleml:Var>Days</ruleml:Var>
-							<ruleml:Ind>30</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen7">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":max_imprisonment"/>
-							<ruleml:Var>Days</ruleml:Var>
-							<ruleml:Ind>60</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen8">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>40000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen9">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>60000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
+		
+		<!--Linkovanje kazni sa stavkom-->
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps1"/>
+				<lrml:appliesPenalty keyref="#jail_min_1"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_1"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen2"/>
-				<lrml:toPrescriptiveStatement keyref="#ps3"/>
+				<lrml:appliesPenalty keyref="#jail_max_1"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_min_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen3"/>
-				<lrml:toPrescriptiveStatement keyref="#ps3"/>
+				<lrml:appliesPenalty keyref="#jail_max_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen4"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen5"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen6"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen7"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen8"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen9"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
+	
+
+		<!--Redosled najdacavanja presude-->
 		<lrml:OverrideStatement>
-			<lrml:Override under="#ps2" over="#ps3"/>
+			<lrml:Override under="#ps_smuggling_lvl_0" over="#ps_smuggling_lvl_1"/>
 		</lrml:OverrideStatement>
 		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps3"/>
+			<lrml:Override under="#ps_smuggling_lvl_0" over="#ps_smuggling_lvl_2"/>
 		</lrml:OverrideStatement>
 		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps4"/>
+			<lrml:Override under="#ps_smuggling_lvl_1" over="#ps_smuggling_lvl_2"/>
 		</lrml:OverrideStatement>
 		<lrml:OverrideStatement>
-			<lrml:Override under="#ps3" over="#ps6"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps7"/>
+			<lrml:Override under="#ps_smuggling_lvl_1" over="#ps_override_1"/>
 		</lrml:OverrideStatement>
 	</lrml:Statements>
 </lrml:LegalRuleML>
