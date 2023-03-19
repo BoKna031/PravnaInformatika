@@ -8,7 +8,7 @@
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:hasSpeed"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
+							<ruleml:Var type="hasVirus">Speed</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:allowed_speed"/>
