@@ -2,6 +2,8 @@
 <lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
 	<lrml:Statements>
 	<!--Opis stavki-->
+	<!--clan 265 | krijumcarenje-->
+		<!--
 		<lrml:PrescriptiveStatement key="ps_smuggling_lvl_1">
 			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -126,8 +128,167 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		-->
+	<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
+		<lrml:PrescriptiveStatement key="ps_funds_without_coverage_lvl_1">
+			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_coverage_in_money"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>500</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_funds_without_coverage_lvl_1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
 	
+		<lrml:PrescriptiveStatement key="ps_funds_without_coverage_lvl_2">
+			<ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_coverage_in_money"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>3000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_funds_without_coverage_lvl_2</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		
+		<lrml:PrescriptiveStatement key="ps_funds_without_coverage_lvl_3">
+			<ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:has_coverage_in_money"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>30000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_funds_without_coverage_lvl_3</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_263_1">
+			<ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_263_2">
+			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_3</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_263_3">
+			<ruleml:Rule key=":rule9" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_3</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_funds_without_coverage_lvl_1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
+	<!--clan 264 | utaja poreza-->
 	<!--Opis kazni-->
+		<!--
 		<lrml:PenaltyStatement key="jail_min_1">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -176,9 +337,71 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		
-		
-		<!--Linkovanje kazni sa stavkom-->
+-->
+		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
+		<lrml:PenaltyStatement key="jail_263_max_1">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>3</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+
+		<lrml:PenaltyStatement key="jail_263_min_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_263_max_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>8</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_263_min_3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>2</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_263_max_3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>10</ruleml:Ind>
+						</ruleml:Atom>	
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+	
+	<!--Linkovanje kazni sa stavkom-->
+	<!--
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#jail_min_1"/>
@@ -204,9 +427,43 @@
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
+		-->
+		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_263_max_1"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 	
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_263_min_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_2"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_263_max_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_2"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 
-		<!--Redosled najdacavanja presude-->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_263_min_3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_263_max_3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+	
+	<!--Redosled najdacavanja presude-->
+	<!--
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_0" over="#ps_smuggling_lvl_1"/>
 		</lrml:OverrideStatement>
@@ -219,5 +476,27 @@
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_1" over="#ps_override_1"/>
 		</lrml:OverrideStatement>
+	-->
+		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->	
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_funds_without_coverage_lvl_2"/>
+		</lrml:OverrideStatement>
+
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_funds_without_coverage_lvl_3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_2" over="#ps_funds_without_coverage_lvl_3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_override_263_1"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_2" over="#ps_override_263_2"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_2" over="#ps_override_263_3"/>
+		</lrml:OverrideStatement>
+		
 	</lrml:Statements>
 </lrml:LegalRuleML>

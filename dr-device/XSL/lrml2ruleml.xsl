@@ -16,8 +16,8 @@
     <xsl:template match="lrml:LegalRuleML">
         <RuleML>
             <xsl:attribute name="proof">proof.ruleml</xsl:attribute>
-            <xsl:attribute name="rdf_export">export.rdf</xsl:attribute>
-            <xsl:attribute name="rdf_export_classes">is_smuggling_lvl_1 is_smuggling_lvl_2 to_jail_min to_jail_max</xsl:attribute>
+            <xsl:attribute name="rdf_export">export.rdf</xsl:attribute> 
+            <xsl:attribute name="rdf_export_classes">is_funds_without_coverage_lvl_1 is_funds_without_coverage_lvl_2 is_funds_without_coverage_lvl_3 to_jail_min to_jail_max</xsl:attribute>
             <xsl:attribute name="rdf_import">&quot;facts.rdf&quot;</xsl:attribute>
             <xsl:apply-templates select="lrml:Statements"/>
         </RuleML>
