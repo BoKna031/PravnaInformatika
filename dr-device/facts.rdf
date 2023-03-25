@@ -7,10 +7,10 @@
         <lc:name>case 01</lc:name>
         <lc:defendant>John</lc:defendant>
 	<lc:has_coverage_in_money>no</lc:has_coverage_in_money>
-    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30001</lc:euro>
-    <lc:goods>nothing</lc:goods>
-    <lc:possession_of_cleared_customs_goods>yes</lc:possession_of_cleared_customs_goods>
-    <lc:location>house</lc:location>
-    <lc:transfer_of_weapon_or_ammunition>no</lc:transfer_of_weapon_or_ammunition>
+    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</lc:euro>
+    <lc:resource>pork</lc:resource>
+    <lc:possession_of_cleared_customs_goods>no</lc:possession_of_cleared_customs_goods>
+    <lc:location>border</lc:location>
+    <lc:transfer_of_weapon_or_ammunition>yes</lc:transfer_of_weapon_or_ammunition>
     </lc:case>
 </rdf:RDF>

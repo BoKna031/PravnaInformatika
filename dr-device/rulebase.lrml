@@ -3,15 +3,14 @@
 	<lrml:Statements>
 	<!--Opis stavki-->
 	<!--clan 265 | krijumcarenje-->
-		<!--
 		<lrml:PrescriptiveStatement key="ps_smuggling_lvl_1">
 			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasGoods"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
@@ -43,9 +42,9 @@
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasGoods"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
@@ -79,9 +78,9 @@
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasGoods"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasGoods">Goods</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:possession_of_cleared_customs_goods"/>
@@ -128,16 +127,21 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
-		-->
+
 	<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
 		<lrml:PrescriptiveStatement key="ps_funds_without_coverage_lvl_1">
 			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:has_coverage_in_money"/>
@@ -167,9 +171,14 @@
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:has_coverage_in_money"/>
@@ -199,9 +208,14 @@
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
+							<ruleml:Rel iri="lc:hasResource"/>
 							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Euro</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
 						</ruleml:Atom>
 						<ruleml:Atom>
 							<ruleml:Rel iri="lc:has_coverage_in_money"/>
@@ -288,7 +302,6 @@
 
 	<!--clan 264 | utaja poreza-->
 	<!--Opis kazni-->
-		<!--
 		<lrml:PenaltyStatement key="jail_min_1">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -337,7 +350,6 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
--->
 		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
 		<lrml:PenaltyStatement key="jail_263_max_1">
 			<lrml:SuborderList>
@@ -401,7 +413,6 @@
 		</lrml:PenaltyStatement>
 	
 	<!--Linkovanje kazni sa stavkom-->
-	<!--
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#jail_min_1"/>
@@ -427,7 +438,6 @@
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
-		-->
 		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
@@ -463,7 +473,6 @@
 		</lrml:ReparationStatement>
 	
 	<!--Redosled najdacavanja presude-->
-	<!--
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_0" over="#ps_smuggling_lvl_1"/>
 		</lrml:OverrideStatement>
@@ -476,7 +485,6 @@
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_1" over="#ps_override_1"/>
 		</lrml:OverrideStatement>
-	-->
 		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->	
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_funds_without_coverage_lvl_2"/>
