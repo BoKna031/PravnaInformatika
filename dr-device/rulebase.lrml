@@ -302,7 +302,7 @@
 
 	<!--clan 264 | utaja poreza-->
 	<!--Opis kazni-->
-		<lrml:PenaltyStatement key="jail_min_1">
+		<lrml:PenaltyStatement key="jail_min_6_month">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -314,19 +314,7 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_max_1">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
-							<ruleml:Var>Year</ruleml:Var>
-							<ruleml:Ind>5</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_min_2">
+		<lrml:PenaltyStatement key="jail_min_1_year">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -338,33 +326,7 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_max_2">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
-							<ruleml:Var>Year</ruleml:Var>
-							<ruleml:Ind>8</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
-		<lrml:PenaltyStatement key="jail_263_max_1">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
-							<ruleml:Var>Year</ruleml:Var>
-							<ruleml:Ind>3</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-
-		<lrml:PenaltyStatement key="jail_263_min_2">
+		<lrml:PenaltyStatement key="jail_min_1_year_2">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -372,23 +334,10 @@
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>1</ruleml:Ind>
 						</ruleml:Atom>
-						
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_263_max_2">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
-							<ruleml:Var>Year</ruleml:Var>
-							<ruleml:Ind>8</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_263_min_3">
+		<lrml:PenaltyStatement key="jail_min_2_year">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -400,7 +349,57 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="jail_263_max_3">
+		
+				
+		<lrml:PenaltyStatement key="jail_max_3_year">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>3</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_5_year">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>5</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_8_year">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>8</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_8_year_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>8</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_10_year">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -415,59 +414,59 @@
 	<!--Linkovanje kazni sa stavkom-->
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_min_1"/>
+				<lrml:appliesPenalty keyref="#jail_min_6_month"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_1"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_max_1"/>
+				<lrml:appliesPenalty keyref="#jail_max_5_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_1"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_min_2"/>
+				<lrml:appliesPenalty keyref="#jail_min_1_year_2"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_max_2"/>
+				<lrml:appliesPenalty keyref="#jail_max_8_year_2"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_smuggling_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_263_max_1"/>
+				<lrml:appliesPenalty keyref="#jail_max_3_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_1"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 	
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_263_min_2"/>
+				<lrml:appliesPenalty keyref="#jail_min_1_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_263_max_2"/>
+				<lrml:appliesPenalty keyref="#jail_max_8_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_2"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_263_min_3"/>
+				<lrml:appliesPenalty keyref="#jail_min_2_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_3"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#jail_263_max_3"/>
+				<lrml:appliesPenalty keyref="#jail_max_10_year"/>
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_3"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
