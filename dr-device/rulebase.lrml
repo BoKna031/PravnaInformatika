@@ -130,7 +130,7 @@
 
 	<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->
 		<lrml:PrescriptiveStatement key="ps_funds_without_coverage_lvl_1">
-			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
+			<ruleml:Rule key=":rule16" closure="universal" strength="defeasible">
 				<ruleml:if>
 					<ruleml:And>
 						<ruleml:Atom>
@@ -300,7 +300,190 @@
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
 
+
 	<!--clan 264 | utaja poreza-->
+
+		<lrml:PrescriptiveStatement key="ps_tax_evasion_lvl_1">
+			<ruleml:Rule key=":rule10" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasResource"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:avoided_paying_taxes"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>1000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_tax_evasion_lvl_1</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_tax_evasion_lvl_2">
+			<ruleml:Rule key=":rule11" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasResource"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:avoided_paying_taxes"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<!--<ruleml:Atom>
+							<ruleml:Rel iri="lc:damage_to_the_financial_interests_of_the_EU"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						-->
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>10000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_tax_evasion_lvl_2</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_tax_evasion_lvl_3">
+			<ruleml:Rule key=":rule12" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasResource"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasEuro"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasEuro">Euro</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:avoided_paying_taxes"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						<!--<ruleml:Atom>
+							<ruleml:Rel iri="lc:damage_to_the_financial_interests_of_the_EU"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+						</ruleml:Atom>
+						-->
+						<ruleml:Atom>
+							<ruleml:Expr>
+								<ruleml:Fun>&gt;</ruleml:Fun>
+								<ruleml:Var>Euro</ruleml:Var>
+								<ruleml:Ind>100000</ruleml:Ind>
+							</ruleml:Expr>
+						</ruleml:Atom>	
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_tax_evasion_lvl_3</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_264_1">
+			<ruleml:Rule key=":rule13" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_264_2">
+			<ruleml:Rule key=":rule14" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_3</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_2</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_override_264_3">
+			<ruleml:Rule key=":rule15" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_3</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Negation>
+						<ruleml:Atom>
+							<ruleml:Rel>is_tax_evasion_lvl_1</ruleml:Rel>
+							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+						</ruleml:Atom>
+					</ruleml:Negation>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
+
 	<!--Opis kazni-->
 		<lrml:PenaltyStatement key="jail_min_6_month">
 			<lrml:SuborderList>
@@ -337,6 +520,28 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_min_1_year_3">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_min_1_year_4">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>1</ruleml:Ind>
+						</ruleml:Atom>
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
 		<lrml:PenaltyStatement key="jail_min_2_year">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -363,6 +568,18 @@
 				</lrml:Obligation>
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_3_year_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>3</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
 		<lrml:PenaltyStatement key="jail_max_5_year">
 			<lrml:SuborderList>
 				<lrml:Obligation>
@@ -370,6 +587,18 @@
 							<ruleml:Rel iri=":to_jail_max"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>5</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_6_year">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>6</ruleml:Ind>
 						</ruleml:Atom>
 						
 				</lrml:Obligation>
@@ -388,6 +617,18 @@
 			</lrml:SuborderList>
 		</lrml:PenaltyStatement>
 		<lrml:PenaltyStatement key="jail_max_8_year_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Var>Year</ruleml:Var>
+							<ruleml:Ind>8</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="jail_max_8_year_3">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
@@ -470,7 +711,38 @@
 				<lrml:toPrescriptiveStatement keyref="#ps_funds_without_coverage_lvl_3"/>
 			</lrml:Reparation>
 		</lrml:ReparationStatement>
-	
+
+		<!--clan 264 | utaja poreza -->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_max_3_year_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_lvl_1"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_min_1_year_3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_lvl_2"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_max_6_year"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_lvl_2"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_min_1_year_4"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_lvl_3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#jail_max_8_year_3"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_lvl_3"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 	<!--Redosled najdacavanja presude-->
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_0" over="#ps_smuggling_lvl_1"/>
@@ -484,7 +756,9 @@
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_smuggling_lvl_1" over="#ps_override_1"/>
 		</lrml:OverrideStatement>
+		
 		<!--clan 263 | izdavanje cekova i sredstava bez pokrica -->	
+		
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_funds_without_coverage_lvl_2"/>
 		</lrml:OverrideStatement>
@@ -504,6 +778,34 @@
 		<lrml:OverrideStatement>
 			<lrml:Override under="#ps_funds_without_coverage_lvl_2" over="#ps_override_263_3"/>
 		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_funds_without_coverage_lvl_1" over="#ps_override_263_3"/>
+		</lrml:OverrideStatement>
 		
+		<!--clan 264 | utaja poreza -->	
+
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_1" over="#ps_tax_evasion_lvl_2"/>
+		</lrml:OverrideStatement>
+
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_1" over="#ps_tax_evasion_lvl_3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_2" over="#ps_tax_evasion_lvl_3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_1" over="#ps_override_264_1"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_2" over="#ps_override_264_2"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_2" over="#ps_override_264_3"/>
+		</lrml:OverrideStatement>
+		<lrml:OverrideStatement>
+			<lrml:Override under="#ps_tax_evasion_lvl_1" over="#ps_override_264_3"/>
+		</lrml:OverrideStatement>
+
 	</lrml:Statements>
 </lrml:LegalRuleML>

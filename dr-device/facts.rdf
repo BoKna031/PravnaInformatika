@@ -6,11 +6,12 @@
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
         <lc:name>case 01</lc:name>
         <lc:defendant>John</lc:defendant>
-	<lc:has_coverage_in_money>no</lc:has_coverage_in_money>
-    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</lc:euro>
-    <lc:resource>pork</lc:resource>
-    <lc:possession_of_cleared_customs_goods>no</lc:possession_of_cleared_customs_goods>
-    <lc:location>border</lc:location>
-    <lc:transfer_of_weapon_or_ammunition>yes</lc:transfer_of_weapon_or_ammunition>
+	<lc:has_coverage_in_money>undefined</lc:has_coverage_in_money>
+    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</lc:euro>
+    <lc:resource>money</lc:resource>
+    <lc:possession_of_cleared_customs_goods>undefined</lc:possession_of_cleared_customs_goods>
+    <lc:location>undefined</lc:location>
+    <lc:transfer_of_weapon_or_ammunition>undefined</lc:transfer_of_weapon_or_ammunition>
+    <lc:avoided_paying_taxes>yes</lc:avoided_paying_taxes>
     </lc:case>
 </rdf:RDF>
