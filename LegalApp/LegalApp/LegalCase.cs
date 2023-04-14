@@ -23,12 +23,13 @@ namespace LegalApp
             Euro = 0;
         }
 
-        public void SmugglingDescription(string defendant, bool possessionOfClearedCustomsGoods, bool transferOfWeaponOrAmmunition)
+        public void SmugglingDescription(string defendant, bool possessionOfClearedCustomsGoods, bool transferOfWeaponOrAmmunition, string resource)
         {
             Defendant = defendant;
             PossessionOfClearedCustomsGoods = possessionOfClearedCustomsGoods ? "yes" : "no";
             Location = "border";
             TransferOfWeaponOrAmmunition = transferOfWeaponOrAmmunition ? "yes" : "no";
+            Resource = resource;
         }
 
         public string PrintData()
@@ -45,14 +46,15 @@ namespace LegalApp
                 "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\r\n        " +
                 "xmlns:lc=\"http://informatika.ftn.uns.ac.rs/legal-case.rdf#\">\r\n    " +
                 "<lc:case rdf:about=\"http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01\">\r\n        " +
-                "<lc:name>case 01</lc:name>\r\n        <lc:defendant>" + Defendant + "</lc:defendant>\r\n\t" +
-                "<lc:has_coverage_in_money>" + HasCoverageInMoney + "</lc:has_coverage_in_money>\r\n    " +
-                "<lc:euro rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">" + Euro + "</lc:euro>\r\n    " +
-                "<lc:resource>" + Resource + "</lc:resource>\r\n    " +
-                "<lc:possession_of_cleared_customs_goods>no</lc:possession_of_cleared_customs_goods>\r\n    " +
-                "<lc:location>border</lc:location>\r\n    " +
-                "<lc:transfer_of_weapon_or_ammunition>yes</lc:transfer_of_weapon_or_ammunition>\r\n    " +
-                "<lc:avoided_paying_taxes>undefined</lc:avoided_paying_taxes>\r\n    " +
+                $"<lc:name>case 01</lc:name>\r\n        " +
+                $"<lc:defendant>{Defendant}</lc:defendant>\r\n\t" +
+                $"<lc:has_coverage_in_money>{HasCoverageInMoney}</lc:has_coverage_in_money>\r\n    " +
+                $"<lc:euro rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">{Euro}</lc:euro>\r\n    " +
+                $"<lc:resource>{Resource}</lc:resource>\r\n    " +
+                $"<lc:possession_of_cleared_customs_goods>{PossessionOfClearedCustomsGoods}</lc:possession_of_cleared_customs_goods>\r\n    " +
+                $"<lc:location>{Location}</lc:location>\r\n    " +
+                $"<lc:transfer_of_weapon_or_ammunition>{TransferOfWeaponOrAmmunition}</lc:transfer_of_weapon_or_ammunition>\r\n    " +
+                $"<lc:avoided_paying_taxes>{AvoidedPayingTaxes}</lc:avoided_paying_taxes>\r\n    " +
                 "</lc:case>\r\n</rdf:RDF>";
         }
     }

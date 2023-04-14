@@ -30,7 +30,7 @@ namespace LegalApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             LegalCase lc = new LegalCase();
-            lc.SmugglingDescription(defendant_txt.Text, false, true);
+            lc.SmugglingDescription(defendant_txt.Text, (bool)possession_of_cleared_customs_goods.IsChecked, (bool)transfer_of_weapon_or_ammunition.IsChecked, resource.Text);
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
             string folder_path = ToUpperDirectory(currPath, numOfParents);
