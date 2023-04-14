@@ -32,11 +32,12 @@ namespace LegalApp
             LegalCase lc = new LegalCase();
             lc.SmugglingDescription(defendant_txt.Text, false, true);
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
-            Console.WriteLine(currPath);
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
             string folder_path = ToUpperDirectory(currPath, numOfParents);
             string facts_path = System.IO.Path.Combine(folder_path, "dr-device", "facts.rdf");
             Overwrite(facts_path, lc.GenerateRDF());
+            string excecute_path = System.IO.Path.Combine(folder_path, "dr-device", "start.bat");
+            Excecute(excecute_path);
         }
 
         private string ToUpperDirectory(string path, int num)
@@ -58,10 +59,11 @@ namespace LegalApp
 
         private void Excecute(string filepath)
         {
+            string parentFolder = System.IO.Directory.GetParent(filepath).FullName;
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
-                Arguments = $"/k \"{filepath}\"",
+                Arguments = $"/c cd \"{parentFolder}\" & start start.bat",
                 UseShellExecute = false,
                 CreateNoWindow = false
             };
