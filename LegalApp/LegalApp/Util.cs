@@ -18,6 +18,23 @@ namespace LegalApp
             }
         }
 
+        public static void OpenReport(LegalCase lc, string dr_device_folder_path)
+        {
+            string facts_path = System.IO.Path.Combine(dr_device_folder_path, "facts.rdf");
+            Util.Overwrite(facts_path, lc.GenerateRDF());
+
+
+            string excecute_path = System.IO.Path.Combine(dr_device_folder_path, "start.bat");
+            Util.ExcecuteStart(excecute_path);
+
+            string export_path = System.IO.Path.Combine(dr_device_folder_path, "export.rdf");
+            ExportParser ep = new ExportParser();
+            ReportsData rd = ep.ReadFile(export_path);
+
+            Report reportDialog = new Report(rd);
+            reportDialog.ShowDialog();
+        }
+
         public static string ToUpperDirectory(string path, int num)
         {
             string result = path;

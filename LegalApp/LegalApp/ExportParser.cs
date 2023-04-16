@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Controls;
 using System.Xml.Linq;
 using System.Collections;
+using System.Threading;
 
 namespace LegalApp
 {
@@ -15,7 +16,9 @@ namespace LegalApp
     {
         public ReportsData ReadFile(string path)
         {
+
             XmlDocument doc = new XmlDocument();
+            Thread.Sleep(7000);
             doc.Load(path);
 
             // Prikazivanje svih čvorova u XML fajlu

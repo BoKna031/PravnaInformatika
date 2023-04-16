@@ -31,9 +31,6 @@
         <Label Grid.Row="2" Grid.Column="0" Content="Euros:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="2" Grid.Column="1" Name="euros"  VerticalAlignment="Center"/>
 
-        <Label Grid.Row="3" Grid.Column="0" Content="Has coverage in money:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <CheckBox Grid.Row="3" Grid.Column="1" Name="has_coverage_in_money" Margin="10" VerticalAlignment="Center"/>
-
         <Grid Grid.Row="6" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

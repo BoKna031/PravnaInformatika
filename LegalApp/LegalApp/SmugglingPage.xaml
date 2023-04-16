@@ -32,11 +32,8 @@
         <Label Grid.Row="2" Grid.Column="0" Content="Amount:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox Grid.Row="2" Grid.Column="1" Name="amount"  VerticalAlignment="Center"/>
 
-        <Label Grid.Row="3" Grid.Column="0" Content="Possession of cleared customs goods:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <CheckBox Grid.Row="3" Grid.Column="1" Name="possession_of_cleared_customs_goods" Margin="10" VerticalAlignment="Center"/>
-
-        <Label Grid.Row="4" Grid.Column="0" Content="Transfer of weapon or ammunition:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <CheckBox Grid.Row="4" Grid.Column="1" Name="transfer_of_weapon_or_ammunition" Margin="10" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Transfer of weapon or ammunition:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <CheckBox Grid.Row="3" Grid.Column="1" Name="transfer_of_weapon_or_ammunition" Margin="10" VerticalAlignment="Center"/>
 
         <Grid Grid.Row="6" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>

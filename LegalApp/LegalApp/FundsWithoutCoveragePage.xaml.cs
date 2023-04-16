@@ -28,14 +28,13 @@ namespace LegalApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             LegalCase lc = new LegalCase();
-            lc.FundsWithoutCoverageDescription(defendant_txt.Text, resource.Text, int.Parse(euros.Text), (bool) has_coverage_in_money.IsChecked);
+            lc.FundsWithoutCoverageDescription(defendant_txt.Text, resource.Text, int.Parse(euros.Text), false);
+
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
             string folder_path = Util.ToUpperDirectory(currPath, numOfParents);
-            string facts_path = System.IO.Path.Combine(folder_path, "dr-device", "facts.rdf");
-            Util.Overwrite(facts_path, lc.GenerateRDF());
-            string excecute_path = System.IO.Path.Combine(folder_path, "dr-device", "start.bat");
-            Util.ExcecuteStart(excecute_path);
+            folder_path = System.IO.Path.Combine(folder_path, "dr-device");
+            Util.OpenReport(lc, folder_path);
         }
     }
 }
