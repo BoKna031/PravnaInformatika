@@ -19,17 +19,32 @@ namespace LegalApp
 
         public LegalCase()
         {
+            RestartFields();
+        }
+
+        private void RestartFields()
+        {
             Defendant = HasCoverageInMoney = Resource = PossessionOfClearedCustomsGoods = Location = TransferOfWeaponOrAmmunition = AvoidedPayingTaxes = "undefined";
             Euro = 0;
         }
 
         public void SmugglingDescription(string defendant, bool possessionOfClearedCustomsGoods, bool transferOfWeaponOrAmmunition, string resource)
         {
+            RestartFields();
             Defendant = defendant;
             PossessionOfClearedCustomsGoods = possessionOfClearedCustomsGoods ? "yes" : "no";
             Location = "border";
             TransferOfWeaponOrAmmunition = transferOfWeaponOrAmmunition ? "yes" : "no";
             Resource = resource;
+        }
+
+        internal void FundsWithoutCoverageDescription(string defendant, string resource, int euros, bool hasCoverageInMoney)
+        {
+            RestartFields();
+            Defendant = defendant;
+            Resource = resource;
+            Euro = euros;
+            HasCoverageInMoney = hasCoverageInMoney ? "yes" : "no";
         }
 
         public string PrintData()
@@ -57,5 +72,7 @@ namespace LegalApp
                 $"<lc:avoided_paying_taxes>{AvoidedPayingTaxes}</lc:avoided_paying_taxes>\r\n    " +
                 "</lc:case>\r\n</rdf:RDF>";
         }
+
+        
     }
 }

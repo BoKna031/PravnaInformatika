@@ -8,10 +8,14 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Frame Grid.Column="0" Margin="10,0" Name="navigationFrame" />
-        <Frame Grid.Column="1" Margin="10" Name="contentFrame"/>
+        <StackPanel Grid.Column="0" Margin="10,0">
+            <Button Content="Smuggling" Name="smuggling_btn" Padding="10" Margin="5" Click="Smuggling_btn_Click"/>
+            <Button Content="Funds without coverage" Name="funds_without_coverage_btn" Padding="10" Margin="5" Click="Funds_without_coverage_btn_Click"/>
+            <Button Content="Tax evasion" Name="taxs_evasion_btn" Padding="10" Margin="5" Click="Taxs_evasion_btn_Click"/>
+        </StackPanel>
+        <Frame Grid.Column="1" Margin="10" Name="contentFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

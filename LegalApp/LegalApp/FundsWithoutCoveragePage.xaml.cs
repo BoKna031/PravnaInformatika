@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +16,11 @@ using System.Windows.Shapes;
 namespace LegalApp
 {
     /// <summary>
-    /// Interaction logic for SmugglingPage.xaml
+    /// Interaction logic for FundsWithoutCoveragePage.xaml
     /// </summary>
-    public partial class SmugglingPage : Page
+    public partial class FundsWithoutCoveragePage : Page
     {
-        public SmugglingPage()
+        public FundsWithoutCoveragePage()
         {
             InitializeComponent();
         }
@@ -30,7 +28,7 @@ namespace LegalApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             LegalCase lc = new LegalCase();
-            lc.SmugglingDescription(defendant_txt.Text, (bool)possession_of_cleared_customs_goods.IsChecked, (bool)transfer_of_weapon_or_ammunition.IsChecked, resource.Text);
+            lc.FundsWithoutCoverageDescription(defendant_txt.Text, resource.Text, int.Parse(euros.Text), (bool) has_coverage_in_money.IsChecked);
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
             string folder_path = Util.ToUpperDirectory(currPath, numOfParents);
@@ -39,8 +37,5 @@ namespace LegalApp
             string excecute_path = System.IO.Path.Combine(folder_path, "dr-device", "start.bat");
             Util.ExcecuteStart(excecute_path);
         }
-       
-
-        
     }
 }

@@ -16,3 +16,5 @@ D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Lega
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\LegalApp.csproj.CoreCompileInputs.cache
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\LegalApp.exe
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\LegalApp.pdb
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\FundsWithoutCoveragePage.g.cs
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\FundsWithoutCoveragePage.baml

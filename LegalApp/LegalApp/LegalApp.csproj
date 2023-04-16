@@ -55,10 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FundsWithoutCoveragePage.xaml.cs">
+      <DependentUpon>FundsWithoutCoveragePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LegalCase.cs" />
     <Compile Include="SmugglingPage.xaml.cs">
       <DependentUpon>SmugglingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SolutionExport.cs" />
+    <Compile Include="Util.cs" />
+    <Page Include="FundsWithoutCoveragePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

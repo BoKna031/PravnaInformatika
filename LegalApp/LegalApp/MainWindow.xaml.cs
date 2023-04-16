@@ -23,7 +23,34 @@ namespace LegalApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Smuggling_btn_Click(object sender, RoutedEventArgs e)
+        {
+            ResetButtonsStyle();
+            smuggling_btn.Background = Brushes.Green;
             contentFrame.Source = new Uri("SmugglingPage.xaml", UriKind.Relative);
+        }
+
+
+        private void Funds_without_coverage_btn_Click(object sender, RoutedEventArgs e)
+        {
+            ResetButtonsStyle();
+            funds_without_coverage_btn.Background = Brushes.Green;
+            contentFrame.Source = new Uri("FundsWithoutCoveragePage.xaml", UriKind.Relative);
+        }
+
+        private void Taxs_evasion_btn_Click(object sender, RoutedEventArgs e)
+        {
+            ResetButtonsStyle();
+            taxs_evasion_btn.Background = Brushes.Green;
+        }
+
+        private void ResetButtonsStyle()
+        {
+            smuggling_btn.Background = null;
+            funds_without_coverage_btn.Background = null;
+            taxs_evasion_btn.Background = null;
         }
     }
 }
