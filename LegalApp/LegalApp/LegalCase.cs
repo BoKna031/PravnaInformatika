@@ -39,7 +39,7 @@ namespace LegalApp
             Resource = resource;
         }
 
-        internal void FundsWithoutCoverageDescription(string defendant, string resource, int euros, bool hasCoverageInMoney)
+        public void FundsWithoutCoverageDescription(string defendant, string resource, int euros, bool hasCoverageInMoney)
         {
             RestartFields();
             Defendant = defendant;
@@ -48,7 +48,7 @@ namespace LegalApp
             HasCoverageInMoney = hasCoverageInMoney ? "yes" : "no";
         }
 
-        internal void TaxEvasionDescription(string defendant, int euros, bool avoidedPayingTaxes)
+        public void TaxEvasionDescription(string defendant, int euros, bool avoidedPayingTaxes)
         {
             RestartFields();
             Defendant = defendant;

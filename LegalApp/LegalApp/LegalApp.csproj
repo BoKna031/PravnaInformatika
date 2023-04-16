@@ -55,14 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ExportParser.cs" />
     <Compile Include="FundsWithoutCoveragePage.xaml.cs">
       <DependentUpon>FundsWithoutCoveragePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LegalCase.cs" />
+    <Compile Include="Penalty.cs" />
+    <Compile Include="Report.xaml.cs">
+      <DependentUpon>Report.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsData.cs" />
     <Compile Include="SmugglingPage.xaml.cs">
       <DependentUpon>SmugglingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolutionExport.cs" />
+    <Compile Include="Statement.cs" />
     <Compile Include="TaxEvasionPage.xaml.cs">
       <DependentUpon>TaxEvasionPage.xaml</DependentUpon>
     </Compile>
@@ -83,6 +90,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Report.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SmugglingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

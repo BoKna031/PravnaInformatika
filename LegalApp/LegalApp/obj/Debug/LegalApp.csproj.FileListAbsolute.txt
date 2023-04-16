@@ -20,3 +20,5 @@ D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Fund
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\FundsWithoutCoveragePage.baml
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\TaxEvasionPage.g.cs
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\TaxEvasionPage.baml
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Report.g.cs
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Report.baml

@@ -34,10 +34,21 @@ namespace LegalApp
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
             string folder_path = Util.ToUpperDirectory(currPath, numOfParents);
-            string facts_path = System.IO.Path.Combine(folder_path, "dr-device", "facts.rdf");
+            
+            string facts_path = System.IO.Path.Combine(folder_path, "dr-device", "facts.rdf");            
             Util.Overwrite(facts_path, lc.GenerateRDF());
-            string excecute_path = System.IO.Path.Combine(folder_path, "dr-device", "start.bat");
-            Util.ExcecuteStart(excecute_path);
+            
+            
+            //string excecute_path = System.IO.Path.Combine(folder_path, "dr-device", "start.bat");
+            //Util.ExcecuteStart(excecute_path);
+
+            string export_path = System.IO.Path.Combine(folder_path, "dr-device", "export.rdf");
+            ExportParser ep = new ExportParser();
+            ReportsData rd = ep.ReadFile(export_path);
+
+            Report reportDialog = new Report(rd);
+            reportDialog.ShowDialog();
+            
         }
        
 
