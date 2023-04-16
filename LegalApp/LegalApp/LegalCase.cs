@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegalApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,6 +46,15 @@ namespace LegalApp
             Resource = resource;
             Euro = euros;
             HasCoverageInMoney = hasCoverageInMoney ? "yes" : "no";
+        }
+
+        internal void TaxEvasionDescription(string defendant, int euros, bool avoidedPayingTaxes)
+        {
+            RestartFields();
+            Defendant = defendant;
+            Resource = "money";
+            Euro = euros;
+            AvoidedPayingTaxes = avoidedPayingTaxes ? "yes" : "no";
         }
 
         public string PrintData()

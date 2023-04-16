@@ -44,6 +44,7 @@ namespace LegalApp
         {
             ResetButtonsStyle();
             taxs_evasion_btn.Background = Brushes.Green;
+            contentFrame.Source = new Uri("TaxEvasionPage.xaml", UriKind.Relative);
         }
 
         private void ResetButtonsStyle()

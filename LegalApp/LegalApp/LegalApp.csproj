@@ -63,6 +63,9 @@
       <DependentUpon>SmugglingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolutionExport.cs" />
+    <Compile Include="TaxEvasionPage.xaml.cs">
+      <DependentUpon>TaxEvasionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Util.cs" />
     <Page Include="FundsWithoutCoveragePage.xaml">
       <SubType>Designer</SubType>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SmugglingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TaxEvasionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
