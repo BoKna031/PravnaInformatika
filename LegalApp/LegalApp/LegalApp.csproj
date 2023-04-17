@@ -60,6 +60,9 @@
       <DependentUpon>FundsWithoutCoveragePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LegalCase.cs" />
+    <Compile Include="LoadingWindow.xaml.cs">
+      <DependentUpon>LoadingWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Penalty.cs" />
     <Compile Include="Report.xaml.cs">
       <DependentUpon>Report.xaml</DependentUpon>
@@ -75,6 +78,10 @@
     </Compile>
     <Compile Include="Util.cs" />
     <Page Include="FundsWithoutCoveragePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

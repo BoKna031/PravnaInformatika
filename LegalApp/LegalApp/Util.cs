@@ -4,7 +4,10 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Interop;
 
 namespace LegalApp
 {
@@ -27,13 +30,38 @@ namespace LegalApp
             string excecute_path = System.IO.Path.Combine(dr_device_folder_path, "start.bat");
             Util.ExcecuteStart(excecute_path);
 
+            ShowLoadingWindow();
+
             string export_path = System.IO.Path.Combine(dr_device_folder_path, "export.rdf");
             ExportParser ep = new ExportParser();
             ReportsData rd = ep.ReadFile(export_path);
 
             Report reportDialog = new Report(rd);
             reportDialog.ShowDialog();
+
         }
+
+        private static void ShowLoadingWindow()
+        {
+            Thread loadingThread = new Thread(() =>
+            {
+                LoadingWindow loadingWindow = new LoadingWindow();
+                loadingWindow.Show();
+
+                Thread.Sleep(18000);
+
+                loadingWindow.Dispatcher.Invoke(() =>
+                {
+                    loadingWindow.Close();
+                });
+            });
+
+            // Blokiraj glavnu nit dok se prozor ne zatvori
+            loadingThread.SetApartmentState(ApartmentState.STA);
+            loadingThread.Start();
+            loadingThread.Join();
+        }
+
 
         public static string ToUpperDirectory(string path, int num)
         {
@@ -51,7 +79,7 @@ namespace LegalApp
             ProcessStartInfo startInfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
-                Arguments = $"/c cd \"{parentFolder}\" & start start.bat",
+                Arguments = $"/c cd \"{parentFolder}\" & start cmd.exe /k start.bat",
                 UseShellExecute = false,
                 CreateNoWindow = false
             };
@@ -59,6 +87,7 @@ namespace LegalApp
             // Pokretanje .bat fajla
             Process process = new Process { StartInfo = startInfo };
             process.Start();
+
         }
 
     }

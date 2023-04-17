@@ -18,7 +18,6 @@ namespace LegalApp
         {
 
             XmlDocument doc = new XmlDocument();
-            Thread.Sleep(7000);
             doc.Load(path);
 
             // Prikazivanje svih čvorova u XML fajlu
@@ -39,8 +38,6 @@ namespace LegalApp
                     penalties.Add(PenaltyParser(node));
                 }
             }
-
-
             return new ReportsData(statements, penalties);
         }
 
