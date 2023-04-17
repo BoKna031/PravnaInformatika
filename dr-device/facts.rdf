@@ -5,10 +5,10 @@
         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
     <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
         <lc:name>case 01</lc:name>
-        <lc:defendant>Petar</lc:defendant>
+        <lc:defendant>tralalala</lc:defendant>
 	<lc:has_coverage_in_money>no</lc:has_coverage_in_money>
-    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</lc:euro>
-    <lc:resource>cekovi</lc:resource>
+    <lc:euro rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10001</lc:euro>
+    <lc:resource>kartica</lc:resource>
     <lc:possession_of_cleared_customs_goods>undefined</lc:possession_of_cleared_customs_goods>
     <lc:location>undefined</lc:location>
     <lc:transfer_of_weapon_or_ammunition>undefined</lc:transfer_of_weapon_or_ammunition>

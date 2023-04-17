@@ -489,7 +489,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_months"/>
 							<ruleml:Var>Month</ruleml:Var>
 							<ruleml:Ind>6</ruleml:Ind>
 						</ruleml:Atom>
@@ -501,7 +501,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>1</ruleml:Ind>
 						</ruleml:Atom>
@@ -513,7 +513,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>1</ruleml:Ind>
 						</ruleml:Atom>
@@ -524,7 +524,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>1</ruleml:Ind>
 						</ruleml:Atom>
@@ -535,7 +535,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>1</ruleml:Ind>
 						</ruleml:Atom>
@@ -546,7 +546,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_min"/>
+							<ruleml:Rel iri=":to_jail_min_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>2</ruleml:Ind>
 						</ruleml:Atom>
@@ -560,7 +560,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>3</ruleml:Ind>
 						</ruleml:Atom>
@@ -572,7 +572,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>3</ruleml:Ind>
 						</ruleml:Atom>
@@ -584,7 +584,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>5</ruleml:Ind>
 						</ruleml:Atom>
@@ -596,7 +596,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>6</ruleml:Ind>
 						</ruleml:Atom>
@@ -608,7 +608,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>8</ruleml:Ind>
 						</ruleml:Atom>
@@ -620,7 +620,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>8</ruleml:Ind>
 						</ruleml:Atom>
@@ -632,7 +632,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>8</ruleml:Ind>
 						</ruleml:Atom>
@@ -644,7 +644,7 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":to_jail_max"/>
+							<ruleml:Rel iri=":to_jail_max_years"/>
 							<ruleml:Var>Year</ruleml:Var>
 							<ruleml:Ind>10</ruleml:Ind>
 						</ruleml:Atom>	

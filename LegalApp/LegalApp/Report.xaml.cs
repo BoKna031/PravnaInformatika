@@ -58,7 +58,7 @@ namespace LegalApp
             {
                 Label txt = new Label { Content = s.Text + ":", FontSize = fontSize, HorizontalAlignment = aligment };
                 string val = s.Possitive ? "possitive" : "negative";
-                Label value = new Label { Content = val, FontSize = fontSize, Margin = new Thickness(margin, 0, 0, 0) };
+                Label value = new Label { Content = val, FontSize = fontSize, Margin = new Thickness(margin, 0, 0, 0), Height = 40, VerticalAlignment = VerticalAlignment.Top};
                 value.Background = s.Possitive ? Brushes.Red : Brushes.Green;
                 grid.Children.Add(txt);
                 grid.Children.Add(value);
