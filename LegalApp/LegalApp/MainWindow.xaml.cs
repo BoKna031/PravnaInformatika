@@ -57,9 +57,9 @@ namespace LegalApp
 
         private void Documents_btn_Click(object sender, RoutedEventArgs e)
         {
-            contentFrame.Source = new Uri("FundsWithoutCoveragePage.xaml", UriKind.Relative);
-            DocumentWindow documentWindow = new DocumentWindow("k304-2009.xml");
-            documentWindow.ShowDialog();
+            ResetButtonsStyle();
+            documents_btn.Background = Brushes.Green;
+            contentFrame.Source = new Uri("DocumentPage.xaml", UriKind.Relative);
         }
     }
 }
