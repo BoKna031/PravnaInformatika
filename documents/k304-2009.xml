@@ -52,7 +52,7 @@
                 <TLCOrganization id="tc" href="http://www.tir-commerce.rs/" showAs="TIR komerc"/>
                 <TLCOrganization id="mfcg" href="https://www.gov.me/mif" showAs="Ministarstvo finansija Crne Gore"/>
 				<TLCOrganization id="puCG" href="https://me.ekapija.com/company/view?id=8000040" showAs="Poreska uprava Crne Gore"/>
-                <TLCOrganization id="kzcg" href="https://me.ekapija.com/company/view?id=8000040" showAs="Krivicni zakonik Crne Gore"/> 
+                <TLCOrganization id="kzcg" href="kzCG.xml" showAs="Krivicni zakonik Crne Gore"/> 
                 <TLCOrganization id="doa" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="DOO A"/>
                 <TLCOrganization id="doaa" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="DOO A2"/>
                 <TLCOrganization id="pt" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="T."/>

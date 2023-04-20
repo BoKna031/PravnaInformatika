@@ -29,6 +29,7 @@ namespace LegalApp
             InitializeComponent();
             string path = PathToDocument(filename);
             ReadFile(path);
+            this.Title = filename;
         }
 
         private static string PathToDocument(string filename)
@@ -67,6 +68,7 @@ namespace LegalApp
             else if (element.LocalName.Equals("span") && element.HasAttribute("refersTo"))
             {
                 CreateHyperlink(element);
+                return;
             }
 
             foreach (XmlNode child in node.ChildNodes)
@@ -87,11 +89,15 @@ namespace LegalApp
                     Hyperlink hyperlink = new Hyperlink
                     {
                         Foreground = Brushes.Red,
-                        NavigateUri = new Uri(references[vrednost])
+                        //NavigateUri = new Uri(references[vrednost])
                     };
                     hyperlink.Inlines.Add(GetTextUntilFirtTag(element.InnerXml));
                     paragraph.Inlines.Add(hyperlink);
-                    
+                    hyperlink.Click += (sender, e) =>
+                    {
+                        string filename = references[vrednost];
+                        OpenNewDocument(filename);
+                    };
                 }
             }
         }
@@ -124,6 +130,12 @@ namespace LegalApp
                 }
             }
             references[id] = href;
+        }
+
+        private void OpenNewDocument(string filename)
+        {
+            DocumentWindow dw = new DocumentWindow(filename);
+            dw.Show();
         }
     }
 }
