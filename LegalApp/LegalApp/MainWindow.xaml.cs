@@ -52,6 +52,14 @@ namespace LegalApp
             smuggling_btn.Background = null;
             funds_without_coverage_btn.Background = null;
             taxs_evasion_btn.Background = null;
+            documents_btn.Background = null;
+        }
+
+        private void Documents_btn_Click(object sender, RoutedEventArgs e)
+        {
+            contentFrame.Source = new Uri("FundsWithoutCoveragePage.xaml", UriKind.Relative);
+            DocumentWindow documentWindow = new DocumentWindow("k304-2009.xml");
+            documentWindow.ShowDialog();
         }
     }
 }

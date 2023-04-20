@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DocumentPage.xaml.cs">
+      <DependentUpon>DocumentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentWindow.xaml.cs">
+      <DependentUpon>DocumentWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExportParser.cs" />
     <Compile Include="FundsWithoutCoveragePage.xaml.cs">
       <DependentUpon>FundsWithoutCoveragePage.xaml</DependentUpon>
@@ -77,6 +83,14 @@
       <DependentUpon>TaxEvasionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Util.cs" />
+    <Page Include="DocumentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DocumentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FundsWithoutCoveragePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

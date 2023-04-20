@@ -15,6 +15,7 @@
             <Button Content="Smuggling" Name="smuggling_btn" Padding="10" Margin="5" Click="Smuggling_btn_Click"/>
             <Button Content="Funds without coverage" Name="funds_without_coverage_btn" Padding="10" Margin="5" Click="Funds_without_coverage_btn_Click"/>
             <Button Content="Tax evasion" Name="taxs_evasion_btn" Padding="10" Margin="5" Click="Taxs_evasion_btn_Click"/>
+            <Button Content="Documents" Name="documents_btn" Padding="10" Margin="5" Click="Documents_btn_Click"/>
         </StackPanel>
         <Frame Grid.Column="1" Margin="10" Name="contentFrame" NavigationUIVisibility="Hidden"/>
     </Grid>

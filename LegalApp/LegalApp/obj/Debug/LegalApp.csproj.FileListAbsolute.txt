@@ -24,3 +24,7 @@ D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Repo
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\Report.baml
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\LoadingWindow.g.cs
 D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\LoadingWindow.baml
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\DocumentPage.g.cs
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\DocumentWindow.g.cs
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\DocumentPage.baml
+D:\Documents\Documents\GitHub\PravnaInformatika\LegalApp\LegalApp\obj\Debug\DocumentWindow.baml
