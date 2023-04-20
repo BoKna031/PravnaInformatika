@@ -447,6 +447,30 @@
 				</ruleml:then>
 			</ruleml:Rule>
 		</lrml:PrescriptiveStatement>
+		<lrml:PrescriptiveStatement key="ps_tax_evasion_legal_entity">
+		<ruleml:Rule key=":rule23" closure="universal" strength="defeasible">
+				<ruleml:if>
+					<ruleml:And>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:hasResource"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Var type="hasResource">Resource</ruleml:Var>
+						</ruleml:Atom>
+						<ruleml:Atom>
+							<ruleml:Rel iri="lc:individual"/>
+							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+						</ruleml:Atom>
+					</ruleml:And>
+				</ruleml:if>
+				<ruleml:then>
+					<ruleml:Atom>
+						<ruleml:Rel>is_legal_entity</ruleml:Rel>
+						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
+					</ruleml:Atom>
+				</ruleml:then>
+			</ruleml:Rule>
+		</lrml:PrescriptiveStatement>
 		<lrml:PrescriptiveStatement key="ps_override_264_1">
 			<ruleml:Rule key=":rule13" closure="universal" strength="defeasible">
 				<ruleml:if>
@@ -509,11 +533,23 @@
 		</lrml:PrescriptiveStatement>
 
 	<!--Opis kazni-->
+		<lrml:PenaltyStatement key="money_min_1k">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":money_min_euros"/>
+							<ruleml:Var>EURO</ruleml:Var>
+							<ruleml:Ind>1000</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
 		<lrml:PenaltyStatement key="money_min_2k">
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":money_min"/>
+							<ruleml:Rel iri=":money_min_euros"/>
 							<ruleml:Var>EURO</ruleml:Var>
 							<ruleml:Ind>2000</ruleml:Ind>
 						</ruleml:Atom>
@@ -525,7 +561,19 @@
 			<lrml:SuborderList>
 				<lrml:Obligation>
 						<ruleml:Atom>
-							<ruleml:Rel iri=":money_max"/>
+							<ruleml:Rel iri=":money_max_euros"/>
+							<ruleml:Var>EURO</ruleml:Var>
+							<ruleml:Ind>20000</ruleml:Ind>
+						</ruleml:Atom>
+						
+				</lrml:Obligation>
+			</lrml:SuborderList>
+		</lrml:PenaltyStatement>
+		<lrml:PenaltyStatement key="money_max_20k_2">
+			<lrml:SuborderList>
+				<lrml:Obligation>
+						<ruleml:Atom>
+							<ruleml:Rel iri=":money_max_euros"/>
 							<ruleml:Var>EURO</ruleml:Var>
 							<ruleml:Ind>20000</ruleml:Ind>
 						</ruleml:Atom>
@@ -761,6 +809,18 @@
 		</lrml:ReparationStatement>
 
 		<!--clan 264 | utaja poreza -->
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#money_min_1k"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_legal_entity"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
+		<lrml:ReparationStatement>
+			<lrml:Reparation>
+				<lrml:appliesPenalty keyref="#money_max_20k_2"/>
+				<lrml:toPrescriptiveStatement keyref="#ps_tax_evasion_legal_entity"/>
+			</lrml:Reparation>
+		</lrml:ReparationStatement>
 		<lrml:ReparationStatement>
 			<lrml:Reparation>
 				<lrml:appliesPenalty keyref="#money_min_2k"/>
