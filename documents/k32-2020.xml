@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.akomantoso.org/2.0 ./akomantoso20.xsd" xmlns="http://www.akomantoso.org/2.0">
+	<!-- Task funded by UN/DESA. Analysis and markup performed by Monica Palmirani, CIRSFID, University of Bologna -->
+	<judgement>
+		<meta>
+			<identification source="#sarsanski">
+				<FRBRWork>
+					<FRBRthis value="/ak/judgement/2020-01-29/32-2020/main"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/32-2020"/>
+					<FRBRdate date="2020-01-29"/>
+					<FRBRauthor href="#ns" as="#author"/>
+					<FRBRcountry value="me"/>
+					<FRBRnumber value="32-2020"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/ak/judgement/2020-01-29/32-2020/me@/main"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/32-2020/me@"/>
+					<FRBRdate date="2020-01-20"/>
+					<FRBRauthor href="#as" as="#editor"/>
+					<FRBRlanguage language="me"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/ak/judgement/2020-01-29/32-2020/eng@/main.xml"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/32-2020/eng@/main.akn"/>
+					<FRBRdate date="2009-01-20"/>
+					<FRBRauthor href="#sarsanski" as="#editor"/>
+					<FRBRformat value="xml"/>
+				</FRBRManifestation>
+			</identification>
+			<publication date="2020-01-20" name="Presuda" showAs="Presuda okrivljenom A.D. iz R." number="371714"/>
+
+			<references source="#sarsanski">
+				<TLCPerson id="adr" href="/ontology/person/ak.adr" showAs="A. D. iz R"/>
+				<TLCPerson id="fl" href="/ontology/person/ak.fl" showAs="F.L."/>
+                <TLCPerson id="cz" href="/ontology/person/ak.cz" showAs="C.Z."/>
+                <TLCPerson id="ab" href="/ontology/person/ak.ab" showAs="A.B."/>
+                <TLCPerson id="as" href="/ontology/person/ak.as" showAs="A.S."/>
+                <TLCPerson id="da" href="/ontology/person/ak.da" showAs="D.A."/>
+                <TLCPerson id="is" href="/ontology/person/ak.is" showAs="I.S."/>
+                <TLCPerson id="mb" href="/ontology/person/ak.mb" showAs="M.B. iz R."/>
+                <TLCPerson id="sz" href="/ontology/person/ak.sz" showAs="S.Z."/>
+                <TLCPerson id="fl" href="/ontology/person/ak.fl" showAs="F.L."/>
+                <TLCPerson id="hn" href="/ontology/person/ak.hn" showAs="H.N."/>
+                <TLCPerson is="ss" href="/ontology/person/ak.ss" showAs="S.S. iz D."/>
+				<TLCPerson id="mrIS" href="/ontology/person/ak.adr" showAs=" Sudski vještak ekonomsko finansijske struke mr. I. S."/>
+				<TLCOrganization id="osro" href="https://sudovi.me/osro" showAs="Osnovni sud u Rožajama"/>
+				<TLCOrganization id="odtr" href="https://www.pravosudje.me/otro" showAs="Osnovno državno tužilaštvo Rožaje"/>
+				<TLCOrganization id="puCG" href="https://me.ekapija.com/company/view?id=8000040" showAs="Poreska uprava Crne Gore"/>
+                <TLCOrganization  id="kzcg" href="kzCG.xml" showAs="Krivicni zakonik Crne Gore"/> 
+                <TLCOrganization id="dvrr" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="DOO Vrelo Rozaje"/>
+                <TLCOrganization id="zpdv" href="" showAs="Zakona o porezu na dodatnu vrijednost" />
+                <TLCOrganization id="zokp" href="https://www.paragraf.me/propisi-crnegore/zakonik-o-krivicnom-postupku.html" showAs="Zakonik o krivicnom postupku Crne Gore"/>
+				<TLCRole id="defendant" href="/ontology/role/defendant" showAs="optuženi"/>
+				<TLCRole id="expert-witness" href="/ontology/role/expert-witness" showAs="sudski veštak"/>
+                <TLCRole id="president-of-court" href="/ontology/role/president-of-court" showAs="predsednik suda" />
+			</references>
+		</meta>
+
+
+        <judgementBody>
+
+            <introduction>
+            <p>
+            U IME CRNE GORE
+            <span refersTo="osr">OSNOVNI SUD U ROŽAJAMA </span> i to Predsjednik suda <person refersTo="#cz" as="president-of-court">Camić Zahit</person>, kao sudija pojedinac, sa zapisničarem <person refersTo="#ab">Adisom Burdžović</person>, odlučujući po optužnom predlogu <span refersTo="#odtr"> Osnovnog državnog tužilaštva iz Rožaja </span> Kt.br.198/19. od 31.12.2019.g, protiv okrivljenog <person refersTo="#adr"> A. D. iz R. </person>, zbog krivičnog djela utaja poreza i doprinosa iz čl. 264.st.1. <span refersTo="#kzcg">Krivičnog Zakonika Crne Gore </span>, nakon donošenja rješenja o usvajanju sporazuma o priznavanju krivice dana 29.01.2020.g. donio je
+            </p>
+            </introduction>
+
+            <background>
+            <p>
+            P R E S U D U
+
+            Okrivljeni: <defendant refersTo="#da">D. A.</defendant>, JMB ... , od oca I. i majke E.rodj. M.rodjenog ... godine u R., sa prebivalištem u naselju Z., opština R., drž. Crne Gore, razumije crnogorski jezik, koji je i njegov maternji jezik, po zanimanju mašinski tehničar, oženjen, otac šestoro maloljetne djece, srednjeg imovnog sanja, osudjivan presudom <span refersTo="#osro">Osnovnog ovog suda</span> K.br.109/19. od 26.8.2019. godine, zbog krivičnog djela šumska kradja iz čl. 324.st.2. u vezi st. 1. <span refersTo="#kzcg"> Krivičnog Zakonika Crne Gore </span>, kojom mu je izrečena uslovna osuda 3 (tri) mjeseca zatvora, uslovno za jednu godinu, i osudjen na novčanu kaznu u iznosu od 300,00 eura.
+
+            </p>
+            </background>
+
+            <decision>
+            <p>
+            O S U DJ U J E
+
+    
+
+            Na NOVČANU KAZNU u iznosu od 1.200,00 (hiljadudvijestotine) eura, kao glavnu kaznu, koju je dužan da plati u roku od 15 dana po pravnosnažnosti presude.
+
+            Ako osudjeni ne plati novčanu kaznu u ovom roku, sud će istu zamijeniti kaznm zatvora tako što će za svakih započetih 25 eura novčane kazne odrediti jedan dan kazne zatvora, i
+
+            Na NOVČANU KAZNU u iznosu od 200,00 (dvijestotine) eura, kao sporednu kaznu koju je dužan da plati u roku od 15 dana po pravnosnažnosti presude.
+
+            Ako osudjeni ne plati novčanu kaznu u ovom roku, sud će istu zamijeniti kaznm zatvora tako što će za svakih započetih 25 eura novčane kazne odrediti jedan dan kazne zatvora.
+
+            Da plati u korist budžetskih sredstava na ime troškova krivičnog postupka iznos od 154,00 eura i na ime paušala iznos od 40,00 eura u roku od 15 dana.
+
+            Da plati Državi Crnoj Gori – Poreskoj upravi na ime imovinsko pravnog zahtjeva iznos od 3.314,85 eura u roku od 6 mjeseci od pravnosnažnosti presude.
+            </p>
+            </decision>
+
+            <motivation>
+            <p>
+            O b r a z l o ž e n j e
+
+    
+
+            <span refersTo="#odtr">ODT iz Rožaja</span>, podnio je optužni predlog Kt.br. 198/19. od 31.12.2019.g, protiv okrivljenog <span refersTo="#adr">A. D. iz R.</span>, zbog krivičnog djela utaja poreza i doprinosa iz <span refersTo="#zokp">čl. 264.st.1. Krivičnog Zakonika Crne Gore</span>. Istovremeno je priložio sporazum o priznavanju krivice koji je zaključen prije podizanja optužnog predloga, kao i zapisnik o pregovaranju i zapisnik o saslušanju okrivljenog o priznavanju krivice.
+
+            Na ročištu za razmatranje sporazuma održanom 24.01.2020. godine, sud je izveo dokaze predložene u optužnom predlogu i to:
+
+            Pročitao: zapisnik Kt.br. 198/19. od 25.11.2019. godine o saslušanju okrivljenog <defendant refersTo="#ad"> A. D. </defendant> pred <span refersTo="#odtr">ODT-om u Rožajama</span>, nalaz i mišljenje sudskog vještaka ekonomsko finansijske struke mr. <person refersTo="#is">I. S.</person>, zapisnik Kt.br. 198/19. od 30.12.2019. godine o saslušanju svjedoka predstavnika Poreske uprave Crne Gore <person refersTo="#fl"> F.L. </person> , zamjenika Zaštitnik imovinsko pravnih interesa Crne Gore, zapisnike Kt.br.198/19. od 25.11.2019. godine <span refersTo="#odtr">ODT-a u Rožajama</span> o saslušanju svjedoka <person refersTo="#ss">Š. Š.</person>, A., A.zapisnik Kt.br.198/19. od 29.11.2019. godine o saslušanju <person refersTo="#hn">H. N.</person> kao poreskog inspektora u Područnoj jedinici Berane i izvod iz kaznene evidencije na ime okrivljenog.
+
+            Iz sadržine izvedenih dokaza na koje okrivljeni i njegov branilac advokat <person refersTo="#M.B. iz R.">M.B. iz R.</person> nijesu imali primjedbi, sud je zaključio da je Državni tužilac pružio dovoljno dokaza o krivici okrivljenog te da je okrivljeni izvršio krivično djelo utaja poreza i doprinosa iz čl. 264.st.1. KZ CG na način, vrijeme i mjestu opisano u izreci presude, a nakon što je u svemu prihvatio sporazum o priznavanju krivice.
+
+            Prilikom odlučivanja o izboru kazne, koja je utvrdjena u skladu sa sporazumom o priznavanju krivice zaključenog izmedju stranaka, sud je našao da su novčane kazne u iznosu od 1.200,00 eura kao glavna ublažena po vrsti od one koja je u Zakonu propisana za predmetno krivično djelo, i sporedna u iznosu od 200,00 eura koja je takodje kumulativno propisana u Zakonu za predmetno krivično djelo, prihvatljiva i u skladu je sa interesima pravičnosti i izrečene u skladu sa odredbama KZ CG i ZKP i da odgovara svrsi izricanja kazne. Naime, okrivljeni je u potpunosti priznao izvršenje krivičnog djela i time doprinio da se činjenično stanje u potpunosti rasvijetli,cijenjene su i pobude iz kojih je izvršio predmetno krivično djelo, da je porodičan čovjek, otac šestoro maloljetne djece, te su imajući u vidu navedene okolnosti koje je cijenio i Državni tužilac prilikom pregovaranja o izrečenim kaznama, opravdane, te da će se sa istima postići svrha kažnjavanja iz čl. 32. u vezi čl. 4. <span refersTo="#kzcg">KZ CG</span>.
+
+            Na osnovu čl. 226.229. <span refersTo="#kzcg">ZKP</span> okrivljeni je obavezan da plati na ime troškova krivičnog postupka iznos od 154,00 eura, koji se odnose na naknadu datu vještacima za dati nalaz i mišljenje i na ime paušala iznos od 40,00 eura, a ovo imajući u vidu trajanje i složenost krivičnog postupka.
+
+            Na osnovu čl. 239.st.2. <span refersTo="#kzcg">ZKP</span>, okrivljeni je obavezan da plati Državi Crnoj Gori – Poreskoj upravi na ime imovinsko pravnog zahtjeva iznos od 3.314,85 eura u roku od 6 mjeseci od pravnosnažnosti presude.
+            </p>
+            </motivation>
+
+
+
+		</judgementBody>
+
+
+		<conclusions>
+            <p>
+            K R I V J E
+
+            Što je:
+
+            U toku 2017. i 2018. godine u Rožajama u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, kao vlasnik i izvršni direktor <span refersTo="#DOO Vrelo Rozaje">DOO Vrelo-com Rožaje</span>, protivno odredbama čl. 35.st.1. 2. i 3. Zakona o porezu na dodatnu vrijednost (Sl. RCG br. 65/2001, 12/2002, 38/2002, 72/2002, 21/2002, 76/2005, 4/2006, i Sl. list CG 16/2007, 40/2011, 29/2013, 9/2015, 53/2016, 1/2017, i 50/2017.), na svojoj brenti u svojoj firmi <span refersTo="#DOO Vrelo Rozaje">DOO Vrelo-com </span> izradio četiri drvene vikendice, državljanima Kosova <person refersTo="#A.S.">A. Š.</person>, <person refersTo="#A.S.">A. Š.</person>, <person refersTo="#S.Z.">Š.Z.</person>, svi iz Peći i <person refersTo="#S.S. iz D.">Š. Š. iz D.</person>, koje je montirao na planiti Štedim, a ove poslove nije evidentirao u poslovnim knjigama, što je bio obavezan, niti je prijavio prihod od istih i obavezni PDV, a obaveza čije je plaćanje izbjegnuto iznosi 3.314,85 eura,
+
+            -čime je izvršio krivično djelo utaja poreza i doprinosa iz čl. 264.st.1. Krivičnog Zakona Crne Gore.
+
+            Pa mu sud na osnovu pomenutog zakonskog propisa, primjenom <span refersTo="#kzcg">čl. 3.4.13.15.32.39.42.45.46.st.1. tač. 6. Krivičnog Zakonika Crne Gore i čl. 226. 229.239.st.2.</span> i <span refersTo="#zokp">374. Zakonika o krivičnom postupku</span>,
+
+            </p>
+
+            <p>
+            <span refersTo="#osr"> OSNOVNI SUD U ROŽAJAMA, dana 20.01.2020. godine. </span>
+
+            ZapisničarPREDSJEDNIK SUDA
+
+            <person refersTo="#ab">Burdžović Adisa </person> s.r. <person refersTo="#cz" as="president-of-court"> Camić Zahit </person> s.r.
+
+            </p>
+
+
+		</conclusions>
+	</judgement>
+</akomaNtoso>

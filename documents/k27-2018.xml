@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.akomantoso.org/2.0 ./akomantoso20.xsd" xmlns="http://www.akomantoso.org/2.0">
+	<!-- Task funded by UN/DESA. Analysis and markup performed by Monica Palmirani, CIRSFID, University of Bologna -->
+	<judgement>
+		<meta>
+			<identification source="#sarsanski">
+				<FRBRWork>
+					<FRBRthis value="/ak/judgement/2020-01-29/27-2018/main"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/27-2018"/>
+					<FRBRdate date="2018-03-05"/>
+					<FRBRauthor href="#ns" as="#author"/>
+					<FRBRcountry value="me"/>
+					<FRBRnumber value="27-2018"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/ak/judgement/2020-01-29/27-2018/me@/main"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/27-2018/me@"/>
+					<FRBRdate date="2018-03-05"/>
+					<FRBRauthor href="#as" as="#editor"/>
+					<FRBRlanguage language="me"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/ak/judgement/2020-01-29/27-2018/eng@/main.xml"/>
+					<FRBRuri value="/ak/judgement/2020-01-29/27-2018/eng@/main.akn"/>
+					<FRBRdate date="2009-01-20"/>
+					<FRBRauthor href="#sarsanski" as="#editor"/>
+					<FRBRformat value="xml"/>
+				</FRBRManifestation>
+			</identification>
+			<publication date="2018-03-05" name="Presuda" showAs="Presuda okrivljenima E.H. i S.H." number="301677"/>
+
+			<references source="#sarsanski">
+				<TLCPerson id="adr" href="/ontology/person/ak.adr" showAs="A. D. iz R"/>
+				<TLCPerson id="mp" href="/ontology/person/ak.mp" showAs="M.P."/>
+                <TLCPerson id="ah" href="/ontology/person/ak.ah" showAs="A.H."/>
+                <TLCPerson id="eh" href="/ontology/person/ak.eh" showAs="E.H."/>
+                <TLCPerson id="sh" href="/ontology/person/ak.sh" showAs="S.H."/>
+                <TLCPerson id="dm" href="/ontology/person/ak.dm" showAs="D.M."/>
+                <TLCPerson id="hs" href="/ontology/person/ak.hs" showAs="H.S."/>
+				<TLCOrganization id="osro" href="https://sudovi.me/osro" showAs="Osnovni sud u Rožajama"/>
+				<TLCOrganization id="odtr" href="https://www.pravosudje.me/otro" showAs="Osnovno državno tužilaštvo Rožaje"/>
+				<TLCOrganization id="puCG" href="https://me.ekapija.com/company/view?id=8000040" showAs="Poreska uprava Crne Gore"/>
+                <TLCOrganization  id="kzcg" href="kzCG.xml" showAs="Krivicni zakonik Crne Gore"/> 
+                <TLCOrganization id="dbk" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="DOO „B.-K.“"/>
+                <TLCOrganization id="zokp" href="https://www.paragraf.me/propisi-crnegore/zakonik-o-krivicnom-postupku.html" showAs="Zakonik o krivicnom postupku Crne Gore"/>
+				<TLCOrganization id="pjb" href="https://berane.me/uprava-za-naplatu-lokalnih-javnih-prihoda/" showAs="Poreska uprava Berane" />
+                <TLCRole id="defendant" href="/ontology/role/defendant" showAs="optuženi"/>
+                <TLCRole id="judge" href="/ontology/role/judge" showAs="sudija" />
+                <TLCRole id="recorder" href="/ontology/role/recorder" showAs="zapisnicar" />
+                <TLCRole id="lawyer" href="/ontology/role/lowyer" showAs="advokat" />
+                <TLCRole id="expert-witness" href="/ontology/role/expert-witness" showAs="sudski veštak"/>
+			</references>
+		</meta>
+
+
+    <judgementBody>
+
+            <introduction>
+            <p>
+            U IME CRNE GORE
+            <span refersTo="#osro">OSNOVNI SUD U ROŽAJAMA </span>, i to sudija <person refersTo="#mp" as="judge">Milosav Zekić</person>, uz učešće zapisničara <person refersTo="ah" as="recorder">Aide Hasović</person>, u krivičnom predmetu okrivljenih <person refersTo="eh" as="defendant">E. H.</person> i <person refersTo="#eh" as="defendant">S. H.</person>, kao saizvršilaca, zbog produženog <span refersTo="#kzcg">krivičnog djela utaja poreza i doprinosa iz čl. 264. st. 3. u vezi st. 1. u vezi čl. 49. i čl. 23. st. 2. Krivičnog zakonika Crne Gore</span>, po optužnici ODT-a iz Rožaja Kt.br. 128/17 (spojen mu Kt.br. 165/17) od 03.01.2018. godine, nakon donošenja rješenja o usvajanju sporazuma o priznavanju krivice, dana 05.03.2018. godine, donio je</p>
+            </introduction>
+
+            <background>
+            <p>
+            P R E S U D U
+
+            Okrivljeni,
+
+    
+
+            <person refersTo="#eh" as="defendant">E. H.</person>, JMB ..., od oca S. i majke K., rođene M., rođen ..godine, u T., R. S., sa prebivalištem u ul. S. br. 55, O. R., državljanin R. S., razumije crnogorski jezik koji je i njegov jezik, radnik, oženjen, otac troje maloljetne djece, pismen, završio SSS, srednjeg imovnog stanja, osuđivan.
+
+    
+
+            <person refersTo="#sh" as="defendant">S. H.</person>, JMB ..., od oca S. i majke K. rođene M., rođenog ..godine, T., R. S., gdje i živi - selo P., državljanin R. S., razumije crnogorski jezik a njegov jezik je bosanski, po zanimanju privatni preduzetnik, oženjen, otac četvoro djece od kojih je troje maloljetno, pismen, završio SSS, siromašnog imovnog stanja, neosuđivan.
+            </p>
+            </background>
+
+            <decision>
+            <p>
+            O S U Đ U J E
+
+            Na KAZNU ZATVORA u trajanju od 5 (pet) mjeseci i istovremeno određuje da će se ova kazna izvršiti tako što će je osuđeni izdržavati u prostorijama u kojima stanuje i
+
+            Na NOVČANU KAZNU u iznosu od 200,00 (dvijestotine) eura. Ako osuđeni ne plati novčanu kaznu u roku od 15 dana, po pravosnažnosti ove presude, ista će se zamijeniti kaznom zatvora, tako što će se za svakih započetih 25,00 eura novčane kazne odrediti jedan dan kazne zatvora.
+
+            Da plati na ime paušala iznos od 40,00 eura, u korist Budžeta Crne Gore, u roku od 15 dana po pravosnažnosti ove presude.
+
+            Okrivljenom <person refersTo="#sh" as="defendant">S. H.</person> sud primjenom pomenutih <span refersTo="#kzcg">zakonskog propisa i čl. 4. 5. 13. 15. 32. 34. 36. 42. 45. 46. st. 1. tač. 4. čl. 52. 53. i 54. Krivičnog zakonika Crne Gore</span> i <span refersTo="#zokp">čl. 303. i 374. Zakonika o krivičnom postupku,</span> izriče
+
+            
+            
+            USLOVNU OSUDU
+
+            Kojom mu utvrđuje kaznu zatvora u trajanju 3 (tri) mjeseca i istovremeno određuje da se kazna neće izvršiti ukoliko osuđeni u roku od jedne godine ne izvrši novo krivično djelo.
+
+            Istovremeno sud okrivljenog <person refersTo="#sh" as="defendant">S. H.</person>, primenom pomenutih propisa i <span refersTo="#kzcg">čl. 4. 5. 13. 15. 32. 34. 39. i 42. Krivičnog zakonika Crne Gore</span> i <span refersTo="#zokp">čl. 303. i 374. Zakonika o krivičnom postupku</span>,
+
+            
+
+        
+            O S U Đ U J E
+
+            Na NOVČANU KAZNU u iznosu od 200,00 (dvije stotine) eura. Ako osuđeni ne plati novčanu kaznu u roku od 15 dana, po pravosnažnosti ove presude, ista će se zamijeniti kaznom zatvora, tako što će se za svakih započetih 25,00 eura novčane kazne odrediti jedan dan kazne zatvora.
+
+            Da plati na ime paušalni iznos od 40,00 eura, u korist Budžeta Crne Gore, u roku od 15 dana po pravosnažnosti ove presude.
+
+            Obavezuju se okrivljeni <person refersTo="#eh" as="defendant">E. H.</person> i <person refersTo="#sh" as="defendant">S. H.</person> da solidarno plate na ime troškova krivičnog postupka iznos od 478,50 eura.
+
+            Od okrivljenih <person refersTo="#eh" as="defendant">E. H.</person> i <person refersTo="#sh" as="defendant">S. H.</person> se, na osnovu <span refersTo="#kzcg">čl. 112. i 113. st. 1. KZCG</span>, ODUZIMA imovinska korist pribavljena izvršenjem produženog krivičnog djela utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 3. u vezi st. 1. u vezi čl. 49. i čl. 23. st. 2. Krivičnog zakonika Crne Gore </span> u iznosu od 30.752,80 eura, na način što će okrivljeni na račun Budžeta Crne Gore solidarno uplatiti 30.752,80 eura u roku od 6 mjeseci od dana pravosnažnosti presude.</p>
+            </decision>
+
+            <motivation>
+            <p>
+            O b r a z l o ž e nj e
+
+            <span refersTo="#odtr">ODT iz Rožaja</span> je podnio ovome sudu optužnicu Kt.br. 128/17 (spojen mu Kt.br. 165/17) od 03.01.2018.g, protiv okrivljenih <person refersTo="#eh" as="defendant">E. H.</person> i <person refersTo="#sh" as="defendant">S. H.</person>, kao saizvršilaca, zbog produženog krivičnog djela utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 3. u vezi st. 1. u vezi čl. 49. i čl. 23. st. 2. Krivičnog zakonika Crne Gore (KZCG)</span>, istovremeno prilažući Sporazum o priznanju krivice, koji je zaključen prije podizanja optužnice, kao i zapisnik o pregovaranju i zapisnik o saslušanju okrivljenih o priznanju krivice.
+
+            Na ročištu za razmatranje sporazuma održanom dana 25.01.2018.g, sud je izveo dokaze predložene optužnicom i to: pročitao rješenje o registraciji za PDV Poreske uprave br. .... od 05.03.2014. godine, rješenje o registraciji br. ...od 05.03.2014. godine, rješenje CRPS-a od 25.02.2014. godine, sa izvodom iz CRPS-a, obrazac OP – ovjerenih potpisa lica ovlašćenih za zastupanje OV. br. 575/14 od 06.03.2014. godine, bilans uspjeha <span refersTo="#dbk">DOO „B. K.“</span> za 2014. godinu i 2015. godinu, zapisnik o izvršenom inspekcijskom nadzoru <span refersTo="#pjb">Poreske uprave – PJ Berane </span> br. 03/15-3-866 od 15.06.2017. godine, rješenje poreske Uprave br. ... od 03.07.2017. godine, nalaz i mišljenje vještaka ekonomsko-finansijske struke <span refersTo="#hs" as="expert-witness">H. Š.</span> od 02.11.2017. godine, izvršio uvid u poslovnu dokumentaciju i račune o realizovanom prometu građe u inostranstvu i na domaćem tržištu u 2014. godini i 2015. godini, te CD sa podacima Uprave carina Crne Gore, o evidentiranom izvozu po računima <span refersTo="#dbk">DOO „B. K.“</span> u 2014. godini i 2015. godini, u izvod iz kaznene evidencije na imena okrivljenih, zapisnik o pregovaranju od 19.12.2017. godine, zapisnik o saslušanju okrivljenih u okviru pregovaranja o zaključenju Sporazuma o priznanju krivice od 19.12.2017. godine i Sporazum o priznanju krivice zaključen između Državnog tužioca i okrivljenih od 19.12.2017. godine.
+
+            Iz sadržine izvedenih dokaza na koje okrivljeni i njihov branilac adv. <person refersTo="#dm" as="lawyer">D. M.</person> nijesu imali primjedbi, sud je zaključio da je Državni tužilac pružio dovoljno dokaza o krivici okrivljenih, te da su okrivljeni, kao saizvršioci, izvršili produženo krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 3. u vezi st. 1. u vezi čl. 49. i čl. 23. st. 2. KZCG</span> na način, vrijeme i mjesto kako je opisano u dispozitivu presude, a nakon što je u svemu prihvatio sporazum o priznanju krivice.
+
+            Prilikom odlučivanja o izboru krivične sankcije, koja je utvrđena u skladu sa sporazumom o priznanju krivice zaključenog između stanaka, sud je našao da su izrečena kazna zatvora u trajanju od pet mjeseci, kao ublažena kazna, okrivljenom <person refersTo="#eh" as="defendant">E. H.</person> koja će se izvršiti tako što će je isti izdržavati u prostorijama u kojima stanuju i novčana kazna u iznosu od po 200,00 eura, koja je kumulativno propisana za djelo koje je okrivljenim stavljeno na teret i izrečena uslovna osuda okrivljenom <person refersTo="sh" as="defendant">S. H.</person> kojom mu je utvrđena kazna zatvora u trajanju od tri mjeseca i istovremeno određeno da se kazna neće izvršiti ukoliko isti u roku od jedne godine ne izvrši novo krivično djelo i novčana kazna u iznosu od 200,00 eura, koja je kumulativno propisana za djelo koje je okrivljenim stavljeno na teret, prihvatljive, u skladu sa interesima pravičnosti i izrečene u skladu sa odredbama Krivičnog zakonika, te da odgovaraju svrsi izricanja krivičnih sankcija. Naime, okrivljeni su u potpunosti priznali izvršenje krivičnog djela i time doprinijeli da se činjenično stanje u potpunosti rasvijetli, porodični su ljudi - okrivljeni <person refersTo="#eh" as="defendant">E.</person> otac troje maloljetne djece, a okrivljeni <person refersTo="#eh" as="defendant">S.</person> otac četvoro djece od kojih troje maloljetno, okrivljeni <person refersTo="#eh" as="defendant">E.</person>ranije nije osuđivan, koje okolnosti u svojoj ukupnosti predstavljaju naročito olakšavajuće okolnosti, dok raniju osuđivanost okrivljenog <person refersTo="#eh" as="defendant">E.</person> nije cijenio kao otežavajuću okolnost jer se ne radi o istovrsnim djelima, pa sud smatra da će se u konkretnom slučaju i sa izrečenom kaznom zatvora u naznačenom trajanju kao ublaženom kaznom u odnosu na okrilvjenog <person refersTo="#eh" as="defendant">E.</person>, koju će okrivljeni izdržavati u prostorijama u kojima stanuje i izrečenom novčanom kaznom u naznačenom iznosu i izrečenom uslovnom osudom i novčanom kaznom u naznačenom iznosu u odnosu na okrivljenog <person refersTo="#sh" as="defendant">S.</person>, u dovoljnoj mjeri uticati na okrivljene da ubuduće ne vrše bilo kakva krivična djela i da će vaspitno djelovati na druge da ne čine ista ili slična djela.
+
+            Kako su okrivljeni oglašeni krivim, to je sud shodno <span refersTo="#zokp">čl. 229. u vezi čl. 226. st. 2. tač. 1.i 9. i st. 3 Zakonika o Krivičnom postupku (ZKP) </span> iste obavezao da plate na ime troškova krivičnog postupka iznos od 478,50 eura, koji se odnosi na ime troškova za vještačenje, i da plate na ime paušala iznos od po 40,00 eura u korist budžeta Crne Gore, a ovo imajući u vidu trajanje i složenost krivičnog postupka, kao i imovno stanje okrivljenih.
+
+            Na osnovu <span refersTo="#kzcg">čl. 112. i 113. st. 1. KZCG</span> od okrivljenih <person refersTo="#eh" as="defendant">E. H.</person> i <person refersTo="#sh" as="defendant">S. H.</person> se ODUZIMA imovinska korist pribavljena izvršenjem krivičnog djela, te su obavezani okrivljeni da u roku od 6 mjeseci od dana pravosnažnosti ove presude, solidarno uplate iznos od 30.752,80 eura, na račun Budžeta Crne Gore, koji iznos odgovara imovinskoj koristi pribavljenoj izvršenjem krivičnog djela.
+
+            Sa navedenih razloga, a shodno navedenim propisima, odlučeno kao u dispozitivu ovog rješenja.
+            </p>
+            </motivation>
+
+
+
+		</judgementBody>
+
+
+		<conclusions>
+            <p>
+            K R I V I S U
+
+            Što su:
+
+            u periodu od 12.03.2014. godine, do 31.12.2015. godine, u Rožajama, <person refersTo="#sh" as="defendant">S. H.</person>, kao odgovorno lice u pravnom licu - izvršni direktor <span refersTo="#dbk">DOO „B.-K.“</span> i <person refersTo="#eh" as="defendant">E. H.</person>, kao ovlašćeno lice za zastupanje i radnik u istom pravnom licu, zajednički, u uračunljivom stanju, svjesni svog djela čije su izvršenje htjeli, iako su znali da je njihovo djelo zabranjeno, u namjeri da njihovo pravno lice <span refersTo="#dbk">DOO „B.-K.“</span> iz R., izbjegne plaćanje poreza na dobit pravnih lica za kalendarsku 2014.godinu i 2015.godinu, u ukupnom iznosu od 30.752,80 Eura, protivno odredbama čl. 5. tačka 6. čl. 7. čl. 28. čl. 39. i čl. 40. Zakona o porezu na dobit pravnih lica (Sl. list RCG 65/01, 12/02, 80/04 i Sl. list CG 40/08 i 86/09, 40/11, 14/12 i 61/13) davali lažne podatke o zakonito stečenim prihodima i prikrivali podatke koji se odnose na utvrđivanje obaveza, i to za realizovani i izvršeni promet - izvoz drvne građe u inostranstvo i prodaju na domaćem tržištu, na način što nijesu prijavili, niti evidentirali u svojoj poslovnoj dokumentaciji-poslovnim knjigama, nabavku drvne građe, prodaju iste u inostranstvu i na domaćem tržištu, što je suprotno odredbama čl. 4. Zakona o računovodstvu i reviziji (Sl. list RCG 69/05 i Sl. list CG 80/08, 73/10 i 32/11) kao i u prijavama poreza, niti su nakon izvršenog prometa izračunali i prijavili porez na dobit pravnih lica za poslovnu i kalendarsku 2014.godinu, u iznosu od 12.574,78 Eura, za poresku osnovicu od 139.719,77 Eura i za poslovnu i kalendarsku 2015.godinu, u iznosu od 18.178,02 Eura, za poresku osnovicu od 201.978,00 Eura,
+
+            - čime su kao, saizvršioci, izvršili produženo <span refersTo="#kzcg">krivično djelo utaja poreza i doprinosa iz čl. 264. st. 3. u vezi st. 1. u vezi čl. 49. i čl. 23. st. 2. Krivičnog zakonika Crne Gore.</span>
+
+            pa sud,
+
+            Okrivljenog <person refersTo="#eh" as="defendant">E. H.</person> primjenom pomenutih <span refersTo="#kzcg">zakonskih propisa i čl. 4. 5. 13. 15. 32. 34. 36. 36a. 39. 42. 45. 46. st. 1. tač. 4. Krivičnog Zakonika Crne Gore i čl. 303 i 374. Zakonika o krivičnom postupku</span>
+            </p>
+
+            <p>
+            <span refersTo="#osr"> OSNOVNI SUD U ROŽAJAMA, Dana 05.03.2018.g.. </span>
+
+            Zapisničar, S U D I J A,
+
+            <person refersTo="#ah" as="recorder">Aida Hasović s.r. </person> <person refersTo="#mz" as="judge">Milosav Zekić s.r.</person>
+        </p>
+
+
+		</conclusions>
+
+    </judgement>
+</akomaNtoso>

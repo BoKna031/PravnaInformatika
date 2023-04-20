@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.akomantoso.org/2.0 ./akomantoso20.xsd" xmlns="http://www.akomantoso.org/2.0">
+	<!-- Task funded by UN/DESA. Analysis and markup performed by Monica Palmirani, CIRSFID, University of Bologna -->
+	<judgement>
+		<meta>
+			<identification source="#sarsanski">
+				<FRBRWork>
+					<FRBRthis value="/ak/judgement/2013-03-26/32-2020/main"/>
+					<FRBRuri value="/ak/judgement/2013-03-26/32-2020"/>
+					<FRBRdate date="2013-03-26"/>
+					<FRBRauthor href="#ns" as="#author"/>
+					<FRBRcountry value="me"/>
+					<FRBRnumber value="32-2020"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/ak/judgement/2013-03-26/32-2020/me@/main"/>
+					<FRBRuri value="/ak/judgement/2013-03-26/32-2020/me@"/>
+					<FRBRdate date="2013-03-26"/>
+					<FRBRauthor href="#as" as="#editor"/>
+					<FRBRlanguage language="me"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/ak/judgement/2013-03-26/32-2020/eng@/main.xml"/>
+					<FRBRuri value="/ak/judgement/2013-03-26/32-2020/eng@/main.akn"/>
+					<FRBRdate date="2013-03-26"/>
+					<FRBRauthor href="#sarsanski" as="#editor"/>
+					<FRBRformat value="xml"/>
+				</FRBRManifestation>
+			</identification>
+			<publication date="2013-03-26" name="Presuda" showAs="Presuda okrivljenima M.A. i DOO ''B.''" number="64691"/>
+
+			<references source="#sarsanski">
+				<TLCPerson id="rb" href="/ontology/person/ak.rb" showAs="R.B."/>
+                <TLCPerson id="ljp" href="/ontology/person/ak.ljp" showAs="LJ.P."/>
+                <TLCPerson id="sv" href="/ontology/person/ak.sv" showAs="S.V."/>
+                <TLCPerson id="js" href="/ontology/person/ak.js" showAs="J.S."/>
+                <TLCPerson id="sv" href="/ontology/person/ak.sv" showAs="S.V."/>
+                <TLCPerson id="bz" href="/ontology/person/ak.bz" showAs="B.Z."/>
+                <TLCPerson id="mp" href="/ontology/person/ak.mp" showAs="M.P."/>
+                <TLCPerson id="dc" href="/ontology/person/ak.dc" showAs="D.C."/>
+                <TLCPerson id="mm" href="/ontology/person/ak.mm" showAs="M.M."/>
+                <TLCPerson id="cv" href="/ontology/person/ak.cv" showAs="C.V."/>
+				<TLCOrganization id="osbp" href="https://sudovi.me/osbp" showAs="Osnovni sud u Bijelom Polju"/>
+                <TLCOrganization id="tc" href="http://www.tir-commerce.rs/" showAs="TIR komerc"/>
+                <TLCOrganization id="mfcg" href="https://www.gov.me/mif" showAs="Ministarstvo finansija Crne Gore"/>
+				<TLCOrganization id="puCG" href="https://me.ekapija.com/company/view?id=8000040" showAs="Poreska uprava Crne Gore"/>
+                <TLCOrganization  id="kzcg" href="kzCG.xml" showAs="Krivicni zakonik Crne Gore"/> 
+                <TLCOrganization id="dob" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="DOO B"/>
+                <TLCOrganization id="pt" href="http://rozajeonline.do.am/vrelo/1.htm" showAs="T."/>
+                <TLCOrganization id="zokp" href="https://www.paragraf.me/propisi-crnegore/zakonik-o-krivicnom-postupku.html" showAs="Zakonik o krivicnom postupku Crne Gore"/>
+                <TLCOrganization id="vubp" href="https://sudovi.me/vsbp" showAs="Visi sud u Bjelom Polju"/>
+                <TLCRole id="defendant" href="/ontology/role/defendant" showAs="optuženi"/>
+                <TLCRole id="judge" href="/ontology/role/judge" showAs="sudija" />
+                <TLCRole id="recorder" href="/ontology/role/recorder" showAs="zapisnicar" />
+                <TLCRole id="lawyer" href="/ontology/role/lowyer" showAs="advokat" />
+                <TLCRole id="expert-witness" href="/ontology/role/expert-witness" showAs="sudski veštak"/>
+			</references>
+		</meta>
+
+        <judgementBody>
+
+            <introduction>
+                <p>
+                    U IME CRNE GORE
+
+                    K.br. 44/2013
+
+                    <span refersTo="#osbp">OSNOVNI SUD U BIJELOM POLJU</span> kao prvostepeni krivični, i to sudija <person refersTo="#rb" as="judge">Rahmo Banda</person>, kao sudija pojedinac, uz učešće zapisničara <person refersTo="#ljp" as="recorder">Ljiljane Popović</person>, u krivičnom predmetu protiv okrivljenog <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, kao pravnog lica i okrivljenog M.A.a iz Bijelog Polja, zbog krivičnog djela utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. Krivičnog Zakonika</span>, po Optužnom predlogu ODT iz B.Polja Kt.br.91/11 i Kt.I.br.2/11 od 28.03.2011. godine, nakon održanog, usmenog, glavnog i javnog pretresa u prisustvu zamjenika ODT-a iz Bijelog Polja <person refersTo="#sv">Š. V.</person>e, branioca okrivljenih <person refersTo="#js" as="lawyer">J. S.</person>a adv. iz Bijelog Polja i ovlašćenog predstavnika Poreske Uprave CG, <person refersTo="#ma" as="defendant">M. A.</person>, a u odsustvu uredno obaviještenih okrivljenog <person refersTo="#ma" as="defendant">M. A.</person>a, koji je ujedno i vlasnik <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja i ovlašćenog predstavnika Uprave Carina CG, donio je i javno objavio dana 26.03.2013. godine,
+                </p>
+            </introduction>
+
+            <background>
+            <p>
+                P R E S U D U
+
+                1. Okrivljeni <person refersTo="#ma" as="defendant">M. A.</person>, od oca Z. i majke H. rodjene K., rodjen 06.11.1979.godine u Bijelom Polju, živi u mjestu rodjenja – Ul. Kneza Miroslava bb, Musliman, državljanin Crne Gore, pismen, završio SSS, vlasnik firme i direktor <span refersTo="#dob" as="defendant">DOO '' B.''</span>, oženjen, otac dvoje djece, srednjeg imovnog stanja, osudjivan presudom Osnovnog suda u B.Polju K.br. 383/09 od 26.10.2010.godine po čl. 152. st. 2. u vezi st. 1. KZ, na 2. mjeseca zatvora.
+
+                2. Okrivljeni <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, kao pravno lice, registarskog broja 50088122, matičnog broja 02088363, kao pravnog lica.
+            </p>
+            </background>
+
+            <decision>
+                <p>
+                    O S U D J U J E
+
+                    Na kaznu zatvora u trajanju od 30 /trideset/ dana kao glavnu kaznu i na novčanu kaznu u iznosu od 400,00 € /četiri stotine eura/ kao sporednu kaznu, koju je dužan da plati u roku od 3 mjeseca po pravnonsažnosti presude, Budžetu CG, na račun Depozita novčanih kazni, troškova postupka i paušala.
+
+                    Ako osuđeni ne plati novčanu kaznu u određenom roku novčana kazna će se zamijeniti tako što će se za svakih započetih 25,oo /dvadeset pet eura/ € novčane kazne odrediti jedan dan zatvora, a ako osuđeni isplati samo dio novčane kazne ostatak će se srazmjerno pretvoriti u zatvor, a ako osuđeni isplati ostatak novčane kazne izvršenje kazne zatvora će se obustaviti.
+
+                    A pravnom licu <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, registarskog broja 50088122, matičnog broja 02088363,primjenom navedenih članova, te <span refersTo="#kzcg">čl. 52, 53 i 54 KZ</span>, i z r i č e:
+
+                    USLOVNU OSUDU
+
+                    Kojom mu utvrdjuje novčanu kaznu u iznosu od 20.000,00 € ( dvadeset hiljada eura), i istovremeno odredjuje da se kazna neće izvršiti ukoliko isto u roku od 3.godine po pravosnažnosti presude ne učini novo krivično djelo, u smislu čl. 5. Zakona o odgovornosti pravnih lica za krivična djela.
+
+                    Okrivljeni se obavezuju na plaćanje paušala u iznosu od po 50 € /pedeset eura/, kao i na ime troškova krivičnog postupka solidarno u iznosu od 280,50€ /dvije stotine osamdeset eura i pedeset centi/ u roku od 15 dana po pravosnažnosti presude, a sve prednje Budžetu CG, na račun Depozita novčanih kazni, troškova postupka i paušala.
+
+                    Oštećeni Uprava Carina CG i Poreska Uprava CG, radi ostvarivanja imovinsko - pravnog zahtjeva upućuju se na parnicu.
+                </p>
+            </decision>
+
+            <motivation>
+                <p>
+                    Optužnim predlogom Osnovnog državnog tužilaštva iz B.Polja Kt.br.91/11 i Kt.I.br. 2/11 od 28.03.2011.godine, <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, kao pravnom licu i okrivljenom<person refersTo="#ma" as="defendant">M. A.</person>u iz Bijelog Polja, stavljeno je na teret da su izvršili krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. Krivičnog Zakonika</span>.
+
+                    Presudom ovog suda K.br. 167/2011 od 20.01.2012.godine okrivljeni <span refersTo="#dob" as="defendant">DOO '' B.''</span>iz Bijelog Polja kao pravno lice i okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> iz Bijelog Polja, na osnovu <span refersTo="#zokp">čl. 373. tač. 2. ZKP-a </span>oslobodjeni su od optužbe jer nije dokazano da su izvršili krivično djelo utaja poreza i doprinosa iz <span refersTo="kzcg">čl. 264. st. 1. KZ</span>. Na navedenu presudu žalbu je izjavio ODT iz Bijelog Polja, pa je <span refersTo="vubp">Viši sud u Bijelom Polju</span> svojim rješenjem Kž.br. 262/12 od 28.12.2012.godine ukinuo prvostepenu presudu i predmet vratio istom sudu na ponovno sudjenje.
+
+                    Glavni pretres je održan i zaključen dana 26.03.2013.godine u odsustvu uredno obaviještenih okrivljenog <person refersTo="#ma" as="defendant">M. A.</person>a, koji je ujedno i vlasnik Firme <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja i ovlašćenog predstavnika Uprave Carina CG.
+
+                    Zamjenik ODT-a <person refersTo="#sv">Š. V.</person>a je izjavila, da prije davanja završne riječi želi da precizira optužni predlog na način što će u istom sada da stoji: - pod brojem 1. <person refersTo="#ma" as="defendant">M. A.</person>, sa generalijama kao na podnijetom Optužnom predlogu, a pod brojem 2. <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, kao pravnog lica, registarskog broja 50088122, matičnog broja 02088363, kao pravnog lica. Što su: - dana 14.10.2009.godine u Bijelom Polju okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> kao odgovorno lice u pravnom licu <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, djelujući u ime istog u okviru svojih ovlašćenja u namjeri da izbjegne djelimično plaćanje poreza i doprinosa, davao lažne podatke, o zakonito stečenim prihodima, na način što je uvezao iz Republike Turske u Crnu Goru, robu široke potrošnje, čija je vrijednost prema izvoznoj carinskoj deklaraciji Republike Turske, iznosila 43.671,91 euro, a prilikom carinjenja robe kod Uprave carina Crne Gore – Ispostava Bijelo Polje, priložio fakturu dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD iz Istanbula R.Turska, na iznos od 5.021,33 eura, umanjivši carinsku osnovicu za iznos od 38.650,58 eura, te je na taj način manje obračunao i uplatio carinski dug u iznosu od 2.319,03 eura i PDV u iznosu od 6.964,83 eura, i tako u ime pravnog lica izbjegao obavezu – plaćanja poreza i drugih dažbina a Budžetu Crne Gore nanio štetu u ukupnom iznosu od 9.283,86 eura. Čime su izvršili i to:- okrivljeni <person refersTo="#ma" as="defendant">M. A.</person>, krivično djelo utaja poreza i doprinosa iz čl. 264. st. 1. KZ, a <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. KZ</span> u vezi sa čl. 5. Zakona o odgovornosti pravnih lica za krivična djela. U završnoj riječi je izjavila, da ostaje pri ranije datoj završnoj riječi stim što dodaje, da je teza optužbe da su okrivljeni počinili krivično djelo stavljeno im na teret, dodatno podkrijepljena dokazom koji je optužba predložila da se izvede u dopuni dokaznog postupka, tj. pribavljenom originalnom fakturom dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD iz Istanbula, kao i nalazom i mišljenjem vještaka koji je isti dao na glavnom pretresu.
+
+                    Punomoćnik oštećenog Poreske Uprave CG <person refersTo="#ma" as="defendant">M. A.</person> u završnoj riječi je izjavila, da ostaje u svemu pri ranije datoj završnoj riječi.
+
+                    Okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> u svojoj odbrani u istražnom postupku je naveo, da je vlasnik i izvršni direktor <span refersTo="#dob" as="defendant">DOO '' B.''</span>, koja se bavi spoljnom i unutrašnjom trgovinom robe široke potrošnje. Istakao je, da negdje početkom oktobra mjeseca 2009.godine zamolio ga je prijatelj <person refersTo="#bz">B. Z.</person>, koji je vlasnik preduzeća <span refersTo="#pt">'' T.''</span> iz Podgorice da preko njegovog preduzeća uveze robu široke potrošnje iz Turske iz razloga što je njegovo preduzeće <span refersTo="#pt">'' T.''</span> blokirano. On je na to pristao bez ikakve novčane nadoknade, a istom licu je izdao lokal koji se nalazi u Tržnom centru. Prilikom uvoza 14.10.2009.godine iz Istanbula R.Turska, vozač kamiona koji je prevozio robu za Z. B.a od dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD, kojeg on ne poznaje, priložio je navedenu fakturu carini i tada na njegovo preduzeće izvršeno carinjenje robe i sa istog su plaćene obaveze za carinu i PDV novcem koji je B. unio u njegovu blagajnu. On je obaveze koje je trebao da izvrši <person refersTo="#bz">Z. B.</person> izvršio umjesto njega, zato što je njegova roba išla preko njegovog preduzeća. Medjutim, carina nije prihvatila iznos te fakture koja je iznosila 5.021,33 eura, već su taj iznos povećali na 20.000,00 eura, našta je on platio porez i carinu u iznosu preko 2.000,00 eura, ali su na to uložili žalbu iz razloga što je navedena roba u stvarnoj vrijednosti od 5.000,00 eura. Poslije toga carina im je vratila 1.200,00 eura, a sudu će naknadno dostaviti potrebnu dokumentaciju koja se odnosi za navedeni slučaj. Na glavnom pretresu od 22.09.2011.godine je dodao, i na pitanje branioca jeli pisana žalba na odluku o utvrdjivanju visine po navedenoj fakturi je odgovorio, da je žalba prihvaćena i svi papiri se nalaze kod <person refersTo="#bz">Z. B.</person>a ili kod njegovog knjigovodje <person refersTo="#mp">M. P.</person>, jer je u to vrijeme bio u pritvoru u Bijelo Polje.
+
+                    Branilac okrivljenih adv. <person refersTo="#js" as="lawyer">J. S.</person>o u završnoj riječi je izjavio, da ostaje pri završnoj riječi od 20.01.2012.godine, kao i predlogu u pogledu krivice, stim što je istakao, da se činjenično stanje u novom postupku nije izmijenilo niti je novim dokazima podkrijepljena teza optužbe, ovo iz razloga što se nezna šta izvoznik potvrdjuje odnosno na koje fakture se odnosi njegova tvrdnja da je ona izvorna, već se radi o jednom uopštenom iskazu koji je dat prije svega u cilju zaštite sopstvenih interesa. Što se tiče same pravne kvalifikacije sve da su dokazani navodi iz optužbe, a nijesu, u konkretnom se nebi moglo raditi o poreskoj utaji jer carinska ispostava nije organ kome se prijavljuju prihodi u smislu mjesečnih, polumjesečnih i godišnjih obračuna, već se podnosi zahtjev za carinjenje po kome se u carinskom postupku postupa, prihvata ili ne prihvata to što je u zahtjevu unijeto. U konkretnom posebno je zaistaći da carinski organ nije prihvatio fakturnu vrijednost već je išao na utvrdjivanje transakcijske i taj postupak je još uvijek u toku odnosno nije pravosnažno okončan, tako da se ne može govoriti o tome da je neko prijavio prihod jer se u konkretnom ne radi o prihodu već o prometu robe, čiji je režim utvrdjen carinskim zakonom i zato je u carinskom postupku ostavljena mogućnost naknadnog carinjenja sa rokom od 1.godine od puštanja robe u slobodan promet, što znači da carinska ispostava uvijek kada sazna za nove podatke može da odkloni netačnost i nepravilnost podataka koje je dobila od uvoznika. Dakle, u konkretnom se ne može raditi o poreskoj utaji niti bilo kom drugom djelu koje se goni po službenoj dužnosti. Predložio je da se optuženi oslobode od optužbe odgovorno i pravno lice i naknade troškovi zastupanja po braniocu.
+
+                    Sud je radi utvrdjivanja odlučnih činjenica i krivice okrivljenih u dokaznom postupku saslušao vještaka ekonomske struke <person refersTo="#dc" as="expert-witness">D. Ć.</person>a, na saglasni predlog stranaka izvršio uvid u fakturu inodobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD.STI iz Istanbula R.Turska br. 71830 od 14.10.2009.godine, izvršio uvid u izvoznu carinsku deklaraciju firme <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Istanbula R.Turska, pročitao nalaz i mišljenje vještaka finansijske struke <person refersTo="#dc" as="expert-witness">D. Ć.</person>a dipl.ecc. od 10.03.2011.godine, izvršio uvid u novo dostavljenu finansijsku dokumentaciju od stranice br. 1 do 32., pročitao nalaz vještaka ekonomske struke <person refersTo="#dc" as="expert-witness">D. Ć.</person>a dat na zapisniku o glavnom pretresu od 23.12.2011.godine i dopuna nalaza od 19.01.2012.godine, pročitao iskaz stalnog sudskog tumača za turski jezik <person refersTo="#mm">M. M.</person>a, dat na zapisniku o glavnom pretresu od 16.01.2012.godine, pročitao iskaz svjedokinje Č.V.e, dat na zapisniku o glavnom pretresu od 16.01.2012.godine, izvršio uvid u novodostavljenu dokumentaciju Uprave Carina – Carinarnice B.Polje, izvršio uvid u rješenje Ministarstva finansija br. 04-856/1-2011 od 24.10.2011.godine, izvršio uvid u originalnu fakturu br. 071830 od 14.10.2009.godine i izvršio uvid u izvod iz KE na ime okrivljlenog <person refersTo="#ma" as="defendant">M. A.</person>a, izdat od strane Uprave Policije PJ B.Polje br. 662 od 04.04.2011.godine.
+
+                    Cijeneći izvedene dokaze pojedinačno i u medjusobnoj vezi, pa ih dovodeći u vezi sa iznešenom odbranom okrivljenih, shodno čl. 370. st. 3.ZKP-a, sud je utvrdio činjenično stanje kao u izreci presude.
+
+                    Naime, prema nalazu i mišljenju vještaka ekonomske struke dipl.ecc <person refersTo="#dc" as="expert-witness">D. Ć.</person>a od 10.03.2011.godine koji je dao na osnovu raspoložive dokumentacije i izjasnio se, da se <person refersTo="#ma" as="defendant">M. A.</person> tereti da je u 2009.godini u svojstvu izvršnog direktora DOO <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz B.Polja uvezao iz R.Turske u Crnu Goru, robu široke potrošnje, čija je vrijednost prema izvoznoj carinskoj deklaraciji R.Turske 43.671,91 eura, a da je prilikom carinjenja robe kod Uprave Carina CG – Ispostava B.Polje priložio fakturu dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Istanbula R.Turska, na iznos od 5.021,33 eura umanjivši carinsku osnovicu za iznos od 38.650,58 eura, te je na taj način utajio porez i carinski dug u ukupnom iznosu od 9.253,26 eura. Na osnovu uvida u fakturu br.71.830 od 14.10.2009.godine izdatu od dobavljača<span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD iz Istanbula, R.Turska na iznos od 5.021,33 eura utvrdjuje se da je on kao izvršni direktor <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz B.Polja istu fakturu priložio prilikom carinjenja robe. Roba je carinjena prema priloženoj fakturi na koju je obračunat carinski dug po prosječnoj stopi od 6 %, dok je obračunat PDV po stopi od 17 %. Na osnovu uvida u dokumentaciju iz spisa predmeta utvrdjuje se da je vrijednost robe prema izvoznoj carinskoj deklaraciji R.Turske 43.671,91 euro, a što znači da je transakcijska vrijednost robe prilikom carinjenja kod Uprave Carine CG – Ispostave B.Polje umanjena za iznos od 38.650,58 eura. Te je dao konačno mišljenje, da je prilikom carinjenja robe manje prikazana njena transakcijska vrijednost za iznos od 38.650,58 eura, pri čemu je manje obračunat i uplaćen carinski dug u iznosu od 2.319,03 eura, dok je manje obračunat i uplaćen PDV u iznosu od 6.964,83 eura, odnosno manje je obračunato i uplaćeno obaveza na uvezenu robu u ukupnom iznosu od 9.283,86 eura.
+
+                    Neposredno na glavnom pretresu od 26.03.2013.godine ovaj vještak se izjasnio, da ostaje pri ranije datim nalazima stim što je istakao, da je sada pribavljena faktura koja po iznosu u podpunosti odgovara izlaznoj deklaraciji preduzeća koje je okrivljenom prodalo robu, te je ostao mišljenja da je isti manje platio obaveze po osnovu uvezene robe i to na ime carine 2.319,03 eura, i na ime PDV-a 6.964,83 eura, a što ukupno daje iznos od 9.283,86 eura. Na pitanje branioca okrivljenog vještak je kazao, da faktura koja se slaže sa izlaznom deklaracijom ima manji broj stavki, većina stavki se u podpunosti slažu po količini sa fakturom na iznos od 5.027,33 eura, koja nosi isti broj i isti datum kao i ova faktura, ali je razlika u cijenama. Faktura na iznos od 5.027,33 eura, ima veći broj stavki sa manjim cijenama otuda i manji iznos. Dalje na pitanje koja je vrsta robe ‘’ havlu’’, kazao, da se radi o turskom nazivu odredjene vrste robe, a on na Turskom jeziku nezna. I objasnio je, da se taj artikal nalazi upisan u obje fakture. A fakture prevedene sa turskog ne postoje u spisima predmeta. Posebno je naveo, da u spisima predmeta postoji samo prva stranica izvozne deklaracije iz koje se tačno vidi iznos i broj fakture koja prati izvoznu deklaraciju, a ne može se izjasniti koliko izvozna deklaracija ima stranica. A na uvid nije imao original izvozne deklaracije, jer istu je nemoguće imati jer se ista zadržava u Carinskoj ispostavi, a samo je imao na uvid kopiju koja se nalazi u spisima predmeta.
+
+                    Uz predhodno treba dodati da iskazom svjedokinje <person refersTo="#cv">Č.V.</person>e se izmedju ostalog utvrdjuje, da je od strane šefa Carinarnice u B.Polju dana 16.10.2009.godine dobila deklaraciju uz koju je bila faktura pod brojem 71830 od 14.10.2009.godine na iznos od 5.021,33 eura za firmu DOO <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz B.Polja a pošiljalac <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Turske i upisana bruto masa 20.220 kgr, raznog tekstila i uz fakturu bio priložen tovarni list – cemer, i isti je pratio fakturu koja je bila priložena. Uvidom u tu dokumentaciju za nju kao carinskog službenika je dovoljno za obradu i ta dokumenta su bila ispravna, koji iskaz je sud prihvatio i istom nije prigovoreno.
+
+                    Uvidom u fakturu <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD Turske br. 71830 od 14.10.2009.godine se vidi, da ista glasi na iznos od 5.021,33 eura, gdje je taksativno nabrojena vrsta tekstilne robe i upisana firma <span refersTo="#dob" as="defendant">DOO '' B.''</span> B.Polje sa adresom. A iz novo pribavljene fakture<span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD R.Turske br. 071830 se vidi, da ista glasi na iznos od 43.671,91 eura, i da je taksativno nabrojana vrsta tekstilne robe i upisano firma <span refersTo="#dob" as="defendant">DOO '' B.''</span> B.Polje sa adresom. A vršenjem uvida u kopiju carinske deklaracije firme <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Turske – prevoda prve stranice predmetne izvozne deklaracije se vidi, da je iz Turske izvezena tekstilna roba od prodavca <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Istanbula za kupca DOO <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja.
+
+                    A iz rješenja Uprave Carina CG – Carinarnica B.Polje br. 13/01 UP/I-92/1-11 od 28.03.2011.godine se vidi, da je istim utvrdjeno, da <span refersTo="#dob" as="defendant">DOO '' B.''</span> B.Polje MB-02088363, carinski dug nastao po deklaraciji CI Bijelo Polje J-4 10032 od 16.10.2009.godine, u iznosu od 11.450,93 eura i da će Centralna banka CG po izvršnosti ovog rješenja izvršiti prinudnu naplatu zbog neplaćanja carinskog duga u propisanom roku u navedenom iznosu.
+
+                    Uvidom u rješenje <span refersTo="#mfcg">Ministarstva finansija CG</span> br. 04-856/1-2011 od 24.10.2011.godine se vidi, da je istim poništeno rješenje Uprave Carina – PJ Carinarnice B.Polje 13/01 br. UP/I-92/1-11 od 28.03.2011.godine i predmet vraćen prvostepenom organu na ponovni postupak i dato obrazloženje.
+
+                    Pored izloženog ovaj sud je sa posebnom pažnjom cijenio odbranu okrivljenog <person refersTo="#ma" as="defendant">M. A.</person>a i u ime pravnog lica, u kojoj je naveo, da je vlasnik i izvršni direktor firme <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz B.Polja, koja se bavi spoljnom i unutrašnjom trgovinom robe široke potrošnje. Da je dana 14.10.2009.godine vozač kamiona koji je prevozio robu za <person refersTo="#bz">Z. B.</person>a koji je vlasnik preduzeća <span refersTo="#tc">TIR Komerc</span> iz Podgorice, carini priložio fakturu i na njegovo preduzeće izvršeno carinjenje robe i sa istog su plaćene obaveze za carinu i PDV i to novcem koji je <span refersTo="#dob" as="defendant">DOO '' B.''</span> unio u njegovu blagajnu. Da on ne poznaje dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD iz R.Turske. da je on uplatio obaveze koje je trebao da izvrši <person refersTo="#bz">Z. B.</person> za to što je roba išla preko njegovog preduzeća <span refersTo="#dob" as="defendant">DOO '' B.''</span>. Da carina nije prihvatila iznos fakture koja je iznosila 5.021,33 eura, već su taj iznos povećali na 20.000,00 eura i on platio porez i carinu u iznosu oko 2.000 i nešto eura, te je uložena žalba poslije čega im je carina vratila iznos oko 1.200 eura. Pa je za odbranu iznešenu na ovaj način sud cijenio da je usmjerena u cilju izbjegavanja sopstvene krivice, kao i krivice pravnog lica, ili pak njenom umanjenju.
+
+                    Pored toga ista je opovrgnuta izvedenim dokazima koje je sud prihvatio.
+
+                    Prije svega nalazom vještaka ekonomske struke <person refersTo="#dc">D. Ć.</person>a od 11.03.2011.godine, koji u svom mišljenju se decidno izjasnio, da u konkretnom slučaju prilikom carinjenja robe manje prikazana njena transakcijska vrijednost za iznos od 38.650,58 eura, pri čemu je manje obračunato i uplaćeno carinskog duga u iznosu od 2.319,03 eura i da je manje obračunat i uplaćen PDV u iznosu od 6.964,83 eura, tj.manje je obračunato i uplaćeno obaveza na uvezenu robu u iznosu od 9.283,86 eura.
+
+                    Ovaj vještak je tokom postupka razjasnio sva sporna pitanja vezana za konkretan slučaj, pa je na glavnom pretresu od 26.03.2013.godine kazao, da je pribavljena faktura koja po iznosu u podpunosti odgovara izvoznoj deklaraciji preduzeća koje je prodalo robu, te je on ostao pri mišljenju, da su manje plaćene obaveze po osnovu uvezene robe i to na ime carine iznos od 2.319,03 eura, a na ime PDV na iznos od 6.964,83 eura, što ukupno daje iznos od 9.283,86 eura. Vještak je pojasnio da faktura na iznos od 5.027,33 eura ima veći broj stavki sa manjim cijenama, otuda je i manji iznos i da se većina stavki u podpunosti slaže po količini sa fakturom na iznos od 5.027,33 eura, koja nosi isti broj i isti datum kao i pribavljena faktura.
+
+                    Da bi postojalo krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st.1. Krivičnog zakonika Crne Gore</span> potrebno je, da počinilac u namjeri da on ili neko drugi izbjegne potpuno ili djelimično plaćanje poreza, doprinosa ili drugih propisanih dažbina, daje lažne podatke o zakonito stečenim prihodima, o predmetima ili drugim činjenicama koje su od uticaja na utvrdjivanje ovakvih obaveza ili ko u istoj namjeri u slučaju obavezne prijave ne prijavi zakonito stečeni prihod, odnosno predmete ili druge činjenice koje su od uticaja na utvrdjivanje ovakvih obaveza, ili ko u istoj namjeri na drugi način prikriva podatke koji se odnose na utvrdjivanje navedenih obaveza, a iznos obaveze čije se plaćanje izbjegava prelazi hiljadu eura. A za postojanje ovog krivičnog djela, a kako iz zakonske definicje proizilazi " čije se plaćanje izbjegava", nije neophodno da je učinilac uspio u svojoj namjeri da izbjegne plaćanje poreza jer djelo postoji ako je kod učinioca postojala namjera za izbjegavanje.
+
+                    U smislu zakonskog propisa pod pojmom poreza podruzumijevaju se sve vrste obaveza prema zajednici. Sobzirom na to kakav je osnov ti podaci se mogu odnositi na visinu raznih prihoda.
+
+                    Dakle, imajući u vidu sve predhodno izloženo od strane ovog suda je utvrdjeno da su okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> i <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, kao pravno lice, registarskog broja 50088122, matičnog broja 02088363, dana 14.10.2009.godine u Bijelom Polju okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> kao odgovorno lice u pravnom licu <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, djelujući u ime istog u okviru svojih ovlašćenja u namjeri da izbjegne djelimično plaćanje poreza i doprinosa, davao lažne podatke, o zakonito stečenim prihodima, na način što je uvezao iz Republike Turske u Crnu Goru, robu široke potrošnje, čija je vrijednost prema izvoznoj carinskoj deklaraciji Republike Turske, iznosila 43.671,91 euro, a prilikom carinjenja robe kod Uprave carina Crne Gore – Ispostava Bijelo Polje, priložio fakturu dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Istanbula R.Turska, na iznos od 5.021,33 eura, umanjivši carinsku osnovicu za iznos od 38.650,58 eura, te je na taj način manje obračunao i uplatio carinski dug u iznosu od 2.319,03 eura i PDV u iznosu od 6.964,83 eura, i tako u ime pravnog lica izbjegao obavezu – plaćanja poreza i drugih dažbina a Budžetu Crne Gore nanio štetu u ukupnom iznosu od 9.283,86 eura, a što znači da su u radnjama okrivljenih i postupanju na opisani način, stekla se sva bitna obeležja bića krivičnog djela utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. KZ</span>, za koje su i oglašeni krivim. U konketnom slučaju ne ispunivši svoju zakonsku obavezu od strane okrivljenih pokazana je namjera da se izbjegne plaćanje poreza i ostalih obaveza, te je djelo izvršeno s umišljajem.
+
+                    Za krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. KZ</span>, propisano je da će se učinilac kazniti zatvorom do 3. godine i novčanom kaznom.
+
+                    Prilikom odlučivanja o vrsti i visini kazne okrivljenom <person refersTo="#ma" as="defendant">M. A.</person>u, sud je cijenio sve okolnosti iz <span refersTo="#kzcg">čl. 42 Krivičnog zakonika</span>, koje utiču na to da kazna bude veća ili manja, pa je na strani istog našao olakšavajuće okolnosti da se radi o relativno mladjem porodičnom licu, ocu dvoje djece, u obavezi izdržavanja porodice, kao i okolnost proteka vremena od izvršenja krivičnog djela, dok je od otežavajućih okolnosti cijenio njegovu raniju osudjivanost presudom Osnovnog suda u B.Polju K.br. 383/09 od 26.10.2010.godine po <span refersTo="#kzcg">čl. 152. st. 2. u vezi st. 1. KZ</span>. Ovaj sud je imajući u vidu predhodno utvrdjene olakšavajuće okolnosti, uz prisustvo otežavajućih – ranije osudjivanosti ali za neistovrsno krivično djelo, okrivljenog osudio na kaznu zatvora u trajanju od 30. dana. A imajući u vidu da je za konkretno krivično djelo kumulativno sa kaznom zatvora propisana i novčana kazna to je sud okrivljenog osudio i na novčanu kaznu preciziranu izrekom presude.
+
+                    Sud smatra da će se zatvorskom i novčanom kaznom koje su precizirane izrekom presude, prema okrivljenom u podpunosti ostvariti svrha kažnjavanja iz <span refersTo="#kzcg">čl. 32 u vezi čl. 4. st. 2. KZ</span>, da optuženi ubuduće nebi vršio ovakva i slična krivična djela.
+
+                    Ovaj sud je imajući u vidu uslove odgovornosti u smislu čl. 5. Zakona o odgovornosti pravnih lica za krivična djela a u vezi čl. 24 st. 1. i 2. istog Zakona, pravnom licu <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, registarskog broja 50088122, matičnog broja 02088363, izrekao uslovnu osudu kojom mu je utvrdio novčanu kaznu u iznosu od 20.000,00 € ( dvadeset hiljada eura), i istovremeno odredio da se ta kazna neće izvršiti ukoliko isto u roku od 3.godine po pravosnažnosti presude ne učini novo krivično djelo ( u smislu čl. 5. Zakona o odgovornosti pravnih lica za krivična djela).
+
+                    Ovdje treba istaći da u sadržajnom smislu uslovna osuda je utvrdjivanje novčane kazne zbog izvršenog krivičnog djela čije se izvršenje odlaže za odredjeno vrijeme pod odredjenim uslovima ( teorijski rok kušnje) koji ne može biti kraći od 1.godine ni duži od 3.godine, i može se odrediti ( odložiti) izvršenjem samo ako utvrdjena novčana kazna nije veća od 100.000,00 eura. A obavezan uslov koji prati uslovnu osudu je da osudjeni (osudjeno pravno lice) za vrijeme provjeravanja ne izvrši novo krivično djelo za koje je odgovorno pravno lice. Tj.ne smije učiniti krivično djelo koje je, pod uslovima iz čl. 5.ovog Zakona osnov za krivičnu odgovornost pravnog lica, a u vezi <span refersTo="#kzcg">čl. 53. st. 1. KZ</span>.
+
+                    Po stanovištu ovog suda u konkretnom slučaju imalo je mjesta izricanju uslovne osude, kod činjenice da Zakon predvidja mogućnost da se ona izrekne pravnom licu, tj.opravdanje da se odloži izvršenje utvrdjene novčane kazne i istovremeno ocijenio da bi se pristupanju izvršenju iste i suviše represivno djelovalo na optuženo pravno lice - nego da će samo upozorenje uz prijetnju kaznom u toku provjeravanja 3.godine dovoljno uticati na isto da ubuduće ne vrši ovakva krivična djela i da će se ostvariti svrha izricanja krivičnih sankcija. A posebno imajući u vidu okolnost opoziva uslovne osude shodno čl. 25. Zakona o odgovornosti pravnih lica za krivična djela.
+
+                    Ovaj sud je cijenio i ostale izvedene dokaze koje nije posebno obrazlagao, nalazeći da isti nemaju karakter odlučnih činjenica za eventualno drugačije presudjenje u ovoj krivičnoj stvari imajući u vidu ukupno činjenično stanje.
+
+                    Sud je obavezao okrivljene na plaćanje paušala u iznosu od po 50 €, koji troškovi paušala su određeni obzirom na složenost i trajanje postupka, shodno odredbi <span refersTo="#zokp">čl. 226. ZKP</span>. Takodje, Sud je obavezao okrivljene na plaćanje troškova krivičnog postupka solidarno u iznosu od 280,50 € koji troškovi se odnose na ime naknade za izvršeno vještačenje od strane vještaka ekonomske struke tokom postupka, shodno <span refersTo="#zokp">čl.229.ZKP-a</span>.
+
+                    Oštećeni Uprave Carina CG i Poreska Uprava CG, radi ostvarivanja imovinsko pravnog zahtjeva upućuju se na parnicu, shodno <span refersTo="#zokp">čl. 239. ZKP-a</span>.
+
+                    Sa iznijetih razloga odlučeno je kao u izreci presude, a na osnovu čl. <span refersTo="#zokp">374. ZKP-a</span>.
+                </p>
+            </motivation>
+
+
+
+        </judgementBody>
+
+
+        <conclusions>
+            <p>
+                K r i v i s u
+
+                Što su:
+
+                - dana 14.10.2009.godine u Bijelom Polju okrivljeni <person refersTo="#ma" as="defendant">M. A.</person> kao odgovorno lice u pravnom licu <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, djelujući u ime istog u okviru svojih ovlašćenja u namjeri da izbjegne djelimično plaćanje poreza i doprinosa, davao lažne podatke, o zakonito stečenim prihodima, na način što je uvezao iz Republike Turske u Crnu Goru, robu široke potrošnje, čija je vrijednost prema izvoznoj carinskoj deklaraciji Republike Turske, iznosila 43.671,91 euro, a prilikom carinjenja robe kod Uprave carina Crne Gore – Ispostava Bijelo Polje, priložio fakturu dobavljača <span refersTo="#dob" as="defendant">DOO '' B.''</span> LTD iz Istanbula R.Turska, na iznos od 5.021,33 eura, umanjivši carinsku osnovicu za iznos od 38.650,58 eura, te je na taj način manje obračunao i uplatio carinski dug u iznosu od 2.319,03 eura i PDV u iznosu od 6.964,83 eura, i tako u ime pravnog lica izbjegao obavezu – plaćanja poreza i drugih dažbina a Budžetu Crne Gore nanio štetu u ukupnom iznosu od 9.283,86 eura,
+
+                - čime su izvršili i to:- okrivljeni <person refersTo="#ma" as="defendant">M. A.</person>, krivično djelo utaja poreza i doprinosa iz čl. 264. st. 1. KZ, a <span refersTo="#dob" as="defendant">DOO '' B.''</span> iz Bijelog Polja, krivično djelo utaja poreza i doprinosa iz <span refersTo="#kzcg">čl. 264. st. 1. KZ</span> u vezi sa čl. 5. Zakona o odgovornosti pravnih lica za krivična djela.
+
+                - pa sud okrivljenog <person refersTo="#ma" as="defendant">M. A.</person>a primjenom zakonskog propisa i <span refersTo="#kzcg">čl. 2, 4, 5, 13, 15, 32, 36, 39, 42, Krivičnog zakonika</span>, te <span refersTo="#zokp">čl. 226,229,239 i 374. Zakonika o krivičnom postupku ZKP.</span>
+            </p>
+
+            <p>
+                <span refersTo="#osbp">OSNOVNI SUD U BIJELOM POLJU</span>
+
+                Dana: 26.03.2013. godine
+
+                Zapisničar, S u d i j a,
+
+                <person refersTo="#ljp" as="recorder">Ljiljana Popović</person> <person refersTo="#rh" as="judge">Rahmo Banda</person>
+            
+            </p>
+
+
+        </conclusions>
+
+
+    </judgement>
+</akomaNtoso>
