@@ -50,8 +50,14 @@ namespace LegalApp
 
         private void TraverseXmlNode(XmlNode node)
         {
+            if (node.LocalName == "#text")
+            {
+                Run run = new Run(node.InnerText);
+                paragraph.Inlines.Add(run);
+            }
+
             if (!(node is XmlElement)) return;
-           
+
             XmlElement element = (XmlElement)node;
 
             if (element.Name.Equals("TLCOrganization"))
@@ -61,11 +67,6 @@ namespace LegalApp
             else if (element.LocalName.Equals("span") && element.HasAttribute("refersTo"))
             {
                 CreateHyperlink(element);
-            }
-            else if(element.LocalName == "#text")
-            {
-                Run run = new Run(element.InnerText);
-                paragraph.Inlines.Add(run);
             }
 
             foreach (XmlNode child in node.ChildNodes)
