@@ -21,18 +21,38 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Content="Defendant:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="0" Grid.Column="1" Name="defendant_txt"  VerticalAlignment="Center"/>
+        <TextBox Margin="10,0" Grid.Row="0" Grid.Column="1" Name="defendant_txt"  VerticalAlignment="Center"/>
 
-        <Label Grid.Row="1" Grid.Column="0" Content="Euros:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Name="euros"  VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Type:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" Name="entity_type_cb" Margin="10,0" VerticalAlignment="Center">
+            <ComboBoxItem IsSelected="True">legal entity</ComboBoxItem>
+            <ComboBoxItem>individual</ComboBoxItem>
+        </ComboBox>
 
+        <ComboBox Grid.Row="1" Grid.Column="3" Name="organization_type" Margin="10,0" VerticalAlignment="Center">
+            <ComboBoxItem>company</ComboBoxItem>
+            <ComboBoxItem>state authorities</ComboBoxItem>
+            <ComboBoxItem>state administration bodies</ComboBoxItem>
+            <ComboBoxItem>public funds</ComboBoxItem>
+            <ComboBoxItem>tourist organizations</ComboBoxItem>
+            <ComboBoxItem>sports clubs</ComboBoxItem>
+            <ComboBoxItem>religious communities</ComboBoxItem>
+            <ComboBoxItem>Association of Citizens</ComboBoxItem>
+        </ComboBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Euros:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Margin="10,0" Grid.Row="2" Grid.Column="1" Name="euros"  VerticalAlignment="Center"/>
+
+
+        
         <!--<Label Grid.Row="2" Grid.Column="0" Content="Avoided paying taxes:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <CheckBox Grid.Row="2" Grid.Column="1" Name="avoided_paying_taxes" Margin="10" VerticalAlignment="Center"/>-->
 
-        <Grid Grid.Row="6" Grid.ColumnSpan="2">
+        <Grid Grid.Row="6" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />

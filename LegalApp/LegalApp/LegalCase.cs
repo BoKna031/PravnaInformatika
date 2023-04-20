@@ -18,6 +18,8 @@ namespace LegalApp
         public string TransferOfWeaponOrAmmunition { get; set; }
         public string AvoidedPayingTaxes { get; set; }
 
+        public string IsIndividual { get; set; }
+
         public LegalCase()
         {
             RestartFields();
@@ -25,7 +27,7 @@ namespace LegalApp
 
         private void RestartFields()
         {
-            Defendant = HasCoverageInMoney = Resource = PossessionOfClearedCustomsGoods = Location = TransferOfWeaponOrAmmunition = AvoidedPayingTaxes = "undefined";
+            Defendant = HasCoverageInMoney = Resource = PossessionOfClearedCustomsGoods = Location = TransferOfWeaponOrAmmunition = AvoidedPayingTaxes = IsIndividual = "undefined";
             Euro = 0;
         }
 
@@ -48,13 +50,14 @@ namespace LegalApp
             HasCoverageInMoney = hasCoverageInMoney ? "yes" : "no";
         }
 
-        public void TaxEvasionDescription(string defendant, int euros, bool avoidedPayingTaxes)
+        public void TaxEvasionDescription(string defendant, int euros, bool avoidedPayingTaxes, bool isIndividual)
         {
             RestartFields();
             Defendant = defendant;
             Resource = "money";
             Euro = euros;
             AvoidedPayingTaxes = avoidedPayingTaxes ? "yes" : "no";
+            IsIndividual = isIndividual ? "yes" : "no";
         }
 
         public string PrintData()
@@ -80,6 +83,7 @@ namespace LegalApp
                 $"<lc:location>{Location}</lc:location>\r\n    " +
                 $"<lc:transfer_of_weapon_or_ammunition>{TransferOfWeaponOrAmmunition}</lc:transfer_of_weapon_or_ammunition>\r\n    " +
                 $"<lc:avoided_paying_taxes>{AvoidedPayingTaxes}</lc:avoided_paying_taxes>\r\n    " +
+                $"<lc:individual>{IsIndividual}</lc:individual>\r\n    " +
                 "</lc:case>\r\n</rdf:RDF>";
         }
 

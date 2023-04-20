@@ -29,7 +29,7 @@ namespace LegalApp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             LegalCase lc = new LegalCase();
-            lc.TaxEvasionDescription(defendant_txt.Text, int.Parse(euros.Text), true);
+            lc.TaxEvasionDescription(defendant_txt.Text, int.Parse(euros.Text), true, entity_type_cb.SelectedIndex == 1);
 
             string currPath = AppDomain.CurrentDomain.BaseDirectory;
             int numOfParents = 5; //number of upper directories to access main project directories (PravnaInformatika)
